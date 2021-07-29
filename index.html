@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/de31adcbb8.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="toggle.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <a href="">인생뮤직</a>
+    </div>
+    <ul class="navbar__menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">이용안내</a></li>
+      <li><a href="">지점안내</a></li>
+      <li><a href="">가맹문의</a></li>
+    </ul>
+    <ul class="navbar__icons">
+      <li><i class="fab fa-youtube"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-facebook-f"></i></li>
+
+    </ul>
+    <a href="#" class="navbar__toggleBtn">
+      <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+  <div class="video-container">
+    <div class="video-foreground">
+      <iframe
+        src="https://www.youtube.com/embed/9MiYiluMkik?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=9MiYiluMkik&rel=0&playsinline=1&enablejsapi=1&mute=1"
+        frameborder="0" allowfullscreen="1"
+        allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+  </div>
+
+  <section class="slide_1">
+    <div data-aos="fade-up" data-aos-duration="2000" class="content">
+      <h1>좋은 사람들과, 존중하는 문화, 익숙한 공간.
+        당연하고 일상적인 것들의 회복.</h1>
+      <!-- <div class="text">
+        <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.
+          이제껏 경험 못 했던 쉽고 편리한 금융 서비스,
+          토스와 함께라면 당신의 일상이 새로워질 거예요.
+        </p>
+      </div> -->
+      
+    </div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="3000" class="slide_2">
+    <div class="content">
+      <h1 class="text">
+        배우고 싶던 악기를 배우고 공연까지 한 곳에서 해보세요.
+        이제껏 경험 못 했던 재미있는 음악학원,
+        인생뮤직과 함께라면 당신의 일상이 새로워질 거예요.
+      </h1>
+    </div>
+  </section>
+  <!-- <section class="slide_3">
+    <div class="">
+      <h1>
+        어서오세요, 인생뮤직에
+      </h1>
+      <img src="img/다운로드 (5).jpg" alt="">
+    </div>
+    
+  </section>
+  <section class="slide_4">
+    <div class="">
+      <img src="img/다운로드 (11).jpg" alt="">
+      <h1>
+        보컬부터 드럼까지 체험레슨으로 부답없이
+      </h1>
+      <span>
+        또래보다 보험료는 적절하게 내고 있는지, 낸 만큼 보장받고 있는지 확인해 보세요.
+        전문가와의 상담을 통해 내게 딱 맞는 보험을 추천 받고, 병원비를 간편하게 청구할 수 있어요.
+      </span>
+    </div>
+  </section>
+  <section class="slide_5">
+    <div class="">
+      <h1>이 모든 것을 인생뮤직에서 체험해보세요</h1>
+      <img src="img/다운로드 (1).jpg" alt="">
+    </div>
+  </section>
+  <section class="parallax">
+
+  </section>
+  <section class="grey">
+
+  </section>
+  <section class="last_photo">
+
+  </section> -->
+
+  <footer>
+    <div class="footer_container">
+      <h3>인생뮤직</h3>
+      <br>
+      <span>사업자 등록번호 : 111-11-11111 | 대표 : 권대희</span>
+      <br />
+      <span>호스팅 서비스 : 카페24 | 통신판매업 신고번호 : 1111-111111-11111 사업자정보확인</span>
+      <br />
+      <span>(본점)경기도 화성시 동탄중심상가2길 5</span>
+      <br><br>
+      <span>© 2021 인생뮤직 ALL RIGHTS RESERVED​</span>
+    </div>
+  </footer>
+
+
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 200) {
+          $(".navbar").css("background" , "#ffffff");
+        }
+        else{
+          $(".navbar").css("background" , "transparent");   
+        }
+      })
+    })
+  </script>
+
+</body>
+
+</html>
