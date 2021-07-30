@@ -11,8 +11,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-  <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- 
+  <script src="https://www.youtube.com/iframe_api"></script> -->
 
 
   <script src="toggle.js"></script>
@@ -65,7 +65,7 @@
           토스와 함께라면 당신의 일상이 새로워질 거예요.
         </p>
       </div> -->
-      
+
     </div>
   </section>
   <section data-aos="fade-up" data-aos-duration="3000" class="slide_2">
@@ -129,47 +129,53 @@
   </footer>
 
   <script>
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
-  
-    function onYouTubeIframeAPIReady(){
-  
-      player = new YT.Player('player',{
-  
-        width:'100%',
-  
-        videoId:'9MiYiluMkik',
-  
-        playerVars:{'autoplay':1,'playsinline':1},
-  
-        events:{ 'onReady':onPlayerReady }
-  
+
+    function onYouTubeIframeAPIReady() {
+
+      player = new YT.Player('player', {
+
+        height: '360',
+        width: '640',
+
+        videoId: '9MiYiluMkik',
+
+        playerVars: { 'autoplay': 1, 'playsinline': 1 },
+
+        events: { 'onReady': onPlayerReady }
+
       });
-  
+
     }
-  
-    function onPlayerReady(e){
-  
+
+    function onPlayerReady(e) {
+
       e.target.mute();
-  
+
       e.target.playVideo();
-  
+
     }
-  
+
   </script>
-  
+
   <script>
     AOS.init();
   </script>
   <script>
-    $(document).ready(function(){
-      $(window).scroll(function(){
+    $(document).ready(function () {
+      $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 200) {
-          $(".navbar").css("background" , "#ffffff");
+          $(".navbar").css("background", "#ffffff");
         }
-        else{
-          $(".navbar").css("background" , "transparent");   
+        else {
+          $(".navbar").css("background", "transparent");
         }
       })
     })
