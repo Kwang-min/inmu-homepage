@@ -17,7 +17,7 @@ a {
 /* for video */
 .video-container{
   width:100%;
-  height:107vh;
+  height:130vh; /* 그 전엔 107이었음 */
   overflow:hidden;
   position:relative;
 
