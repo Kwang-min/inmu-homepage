@@ -238,6 +238,9 @@ footer .footer_container span {
   /* for video */
 
   /* for slide */
+  .slide_1 {
+    height: 60vh;
+  }
 
   .slide_1 .content {
     width: 100%;
