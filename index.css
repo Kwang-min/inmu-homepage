@@ -146,6 +146,7 @@ a {
   height: 100%;
   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),
   url("https://cdn.pixabay.com/photo/2020/07/08/18/34/friends-5384824_1280.jpg");
+  background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -245,6 +246,11 @@ footer .footer_container span {
   .slide_1 .content {
     width: 100%;
     padding: 0 12px;
+  }
+
+  .slide_1 .content h1 {
+    text-align: center;
+    font-size: 30px;
   }
 
   .slide_2 .text {
