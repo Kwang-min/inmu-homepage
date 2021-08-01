@@ -247,7 +247,7 @@ a {
 footer {
   background-color: #17171C;
   width: 100%;
-  min-height: 50%;
+  min-height: 55%;
 }
 
 footer .footer_container {
@@ -328,7 +328,7 @@ footer .footer_container span {
   }
 
   .slide_3 {
-    height: 450vh;
+    height: 450%;
   }
 
   .slide_3 .part_1 .text {
