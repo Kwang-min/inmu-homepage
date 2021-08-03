@@ -308,7 +308,7 @@ footer .footer_container span {
 
   .slide_1 .content {
     width: 100%;
-    padding-left: 12px; padding-right: 12px;
+    padding: 125px 12px;
   }
 
   .slide_1 .content h1 {
