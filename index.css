@@ -319,8 +319,17 @@ footer .footer_container span {
   font-family: 'Jua';
 }
 
+.test {
 
+}
+.test1 {
+  display: flex;
+  justify-content: center;
 
+}
+.test1 h1 {
+  padding: 250px 0;
+}
 
 
 @media screen and (max-width:768px) {
