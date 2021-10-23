@@ -390,7 +390,11 @@ a {
   padding: 8px 12px;
   border-radius: 10px;
   margin-top: 20px;
+  cursor: pointer;
 
+}
+.slide_6 .content span a {
+  color: black;
 }
 /* for footer */
 
