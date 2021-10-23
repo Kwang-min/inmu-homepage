@@ -94,6 +94,7 @@ a {
 
 .intro h1 {
   color: #fff;
+  
 }
 
 .intro .text {
@@ -109,11 +110,11 @@ a {
 .intro .text p {
   color: #ffffff;
   font-size: 25px;
-  margin-top: 14px;
+  margin-top: 20px;
 }
 
 .content_container {
-  background-color: #E8E8E8;
+  background-color: #F3F4F5;
   height: 700px;
 }
 .content {
@@ -123,6 +124,7 @@ a {
 }
 .content > h2 {
   font-family: 'Jua';
+  font-weight: 400;
 }
 
 .list {
@@ -133,7 +135,11 @@ a {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  /* box-shadow: 1px 1px 1px 1px gray; */
+  
+}
+
+.list:hover {
+  box-shadow: 4px 4px 20px gray;
 }
 
 .list .text_container {
