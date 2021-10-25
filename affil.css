@@ -118,11 +118,15 @@ a {
   font-size:40px;
   font-weight: 600;
   border-bottom: 0.2em solid #FF1493;
-  margin-bottom: 30px;
 }
 
+.box_container {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
 .box {
-
   border: solid 2px #e4e5ed;
 }
 .box .content {
