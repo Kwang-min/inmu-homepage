@@ -77,6 +77,60 @@ a {
   display: none;
 }
 
+
+
+.content_container {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 40px;
+}
+
+.intro p {
+  font-size: 20px;
+  font-family: 'Jua';
+}
+
+.intro img {
+  width: 60%;
+  margin: 30px auto 60px;
+}
+
+.line {
+  width: 35px;
+  height: 5px;
+  margin: 30px auto 45px;
+  background-color: #FF1493;
+
+}
+
+.process {
+  text-align: center;
+}
+.process > .title {
+  font-size:40px;
+  font-weight: 600;
+  border-bottom: 0.2em solid #FF1493;
+  margin-bottom: 30px;
+}
+
+.box {
+
+  border: solid 2px #e4e5ed;
+}
+.box .content {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
 /* for footer */
 
 footer {
