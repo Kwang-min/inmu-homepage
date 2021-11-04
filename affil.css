@@ -171,9 +171,12 @@ a {
   color: #666;
 }
 
-.postscript {
-  border: solid 1px #666;
-  height: 200px;
+.process p {
+  text-align: left;
+}
+
+.condition {
+  margin-top: 130px;
   margin-bottom: 130px;
 }
 
@@ -183,22 +186,22 @@ a {
   border-bottom: 0.2em solid #FF1493;
 }
 
-.inquiry > .title {
-  font-size:40px;
-  font-weight: 600;
-  border-bottom: 0.2em solid #FF1493;
-}
-
 .condition .table_container {
   background-color: #fafafa;
   width: 100%;
   margin-top: 80px;
-  padding: 40px;
+  padding: 40px 0;
   display: table;
   border-color: grey;
 }
 
+table{
+  width: 95%;
+  margin: 0 auto;
+}
+
 tbody {
+  /* width: 100%; */
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
@@ -211,20 +214,68 @@ tr {
 }
 
 th {
+  width: 30%;
+  padding: 20px 30px ;
   background: #fff;
   color: black;
   font-size: 1.125rem;
   letter-spacing: -0.25px;
   text-align: left;
+  
 }
 
 td {
+  width: 70%;
+  padding: 20px 20px;
   font-size: 0.937rem;
   color: #666;
   background: #fff;
   display: table-cell;
   vertical-align: inherit;
+  
 }
+
+.condition p {
+  text-align: left;
+  margin: 20px 30px;
+}
+
+.inquiry {
+  padding-bottom: 100px;
+}
+
+.inquiry > .title {
+  font-size:40px;
+  font-weight: 600;
+  border-bottom: 0.2em solid #FF1493;
+}
+
+.inquiry .post_container {
+  margin-top: 100px;
+  display: flex;
+
+}
+
+.inquiry .post_container .post {
+  border: solid 2px #e4e5ed;
+  border-radius: 17px;
+  width: 48%;
+  height: 350px;
+  margin: 0 12px;
+
+}
+
+.inquiry .post_container .post .content {
+  margin: 30px auto;
+  width: 85%;
+}
+
+.inquiry .content .title {
+  font-size:25px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
 /* for footer */
 
 footer {
@@ -280,6 +331,48 @@ footer .footer_container span {
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
+  }
+
+  .content_container {
+    width: 100%;
+  }
+
+  .intro img {
+    width: 90%;
+  }
+
+  .process {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .box_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box .content {
+    width: 80%;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th {
+    width: 40%;
+  }
+  
+  td {
+    width: 60%;
+  }
+
+  .inquiry .post_container {
+    flex-direction: column;
+  }
+
+  .inquiry .post_container .post {
+    width: 90%;
+    margin: 30px auto;
   }
 
 }
