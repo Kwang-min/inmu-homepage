@@ -19,28 +19,27 @@ a {
 /* for video */
 .video-container{
   width:100%;
-  /* height:100vh;  */
   overflow:hidden;
   position:relative;
-
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 48.4%; 
+  /* 원래는 56.25% 돼있었음 조금 더 길이 줄이고 싶어서 48.4 해놓음 
+    문제 생기면 원래대로 복구하자! (모바일에서는 56.25%로 해놨음)
+  */
+  /* 세로를0으로 해놓고 패딩으로 세로 길이를 설정하네?
+  패딩은 가로 길이 기준인가 그래서 56.25%가 16:9?? 
+  16:9 하니까 크기 움직여도 항상 블랙 바 없네 원래 영상 비율인가 봄 */
+  /* 16:9 */
   height: 0;
 }
 
-
-.video-container iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .video-container iframe{
   position: absolute;
   top: -60px; 
+  /* 위로 땡겨서 제목 짤리게 */
   left: 0;
   width: 100%;
-  height: calc(100% + 120px);
+  height: calc(100% + 120px); 
+  /*길이 더 길게 해서 유튜브 마크 짤리게하는 듯 (오버플로우 히든인데 길이 100%에 120px더했으니??)?? */
 }
 
 .video-container iframe {
@@ -455,6 +454,10 @@ footer .footer_container span {
   }
 
   /* for video */
+
+  .video-container{
+    padding-bottom: 56.25%; 
+  }
 
   /* for slide */
 
