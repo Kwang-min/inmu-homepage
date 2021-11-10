@@ -123,6 +123,7 @@ a {
 
 .slide_1 .content {
   width: 50%;
+  text-align: center;
   padding: 250px 0;
   /* display: flex;
   justify-content: space-between; */
@@ -130,7 +131,7 @@ a {
 }
 
 .slide_1 .content h1 {
-  font-size: 35px;
+  font-size: 45px;
 }
 
 /* .slide_1 .content .text {
@@ -146,7 +147,7 @@ a {
   width: 100%;
   padding: 250px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/다운로드 (7).jpg");
+  url("img/소중한 시간을 ~.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -160,7 +161,7 @@ a {
   width: 50%;
   margin-left:50px;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .slide_3 {
@@ -176,13 +177,14 @@ a {
 }
 
 .slide_3 .part_1 .text {
-  width: 40%;
+  width: 35%;
   margin-left: 100px;
 } 
 
 .slide_3 .part_1 .text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
+
 .slide_3 .part_1 .text span {
   font-size: 1.4rem;
   font-weight: 600;
@@ -220,7 +222,6 @@ a {
 }
 
 .slide_3 .part_2 .text h2 {
-  
   color: #333d4b;
 }
 
@@ -239,6 +240,8 @@ a {
 }
 
 .slide_3 .part_3 h1 {
+  width: 70%;
+  margin: 150px auto 0;
   margin-top: 150px;
   font-size: 3rem;
   text-align: center;
