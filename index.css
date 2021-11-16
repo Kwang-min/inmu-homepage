@@ -577,6 +577,10 @@ footer .footer_container span {
     width: 80%;
   }
 
+  .slide_4 {
+    background-color: #fff;
+  }
+
   .slide_4 .content h1 {
     font-size: 1.6rem;
   }
