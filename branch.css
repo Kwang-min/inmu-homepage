@@ -82,7 +82,7 @@ a {
   width: 100%;
   height: 550px;
   padding: 250px 0;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
   url("img/KakaoTalk_20211106_142459141_04.jpg");
   background-position: center;
   background-size: cover;
@@ -99,7 +99,7 @@ a {
 }
 
 .intro .text {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   text-align: center;
 }
@@ -111,7 +111,7 @@ a {
 .intro .text p {
   color: #ffffff;
   font-size: 25px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .content_container {
