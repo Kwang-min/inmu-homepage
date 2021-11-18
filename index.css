@@ -147,7 +147,7 @@ a {
   width: 100%;
   padding: 250px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/소중한 시간을 ~.jpg");
+  url("https://i.imgur.com/kJ4vtIh.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -276,7 +276,7 @@ a {
 
 .slide_4 {
   width: 100%;
-  background-color: #E8E8E8;
+  background-color: #F3F4F5;
   
 }
 .slide_4 .content {
@@ -351,17 +351,17 @@ a {
 
 .slide_5 .review_1{
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/원데이, 토크콘서트, 문화살롱.JPG");
+  url("https://i.imgur.com/Zi0kdjT.jpg");
 }
 
 .slide_5 .review_2{
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/원데이, 토크콘서트, 문화살롱5.JPG");
+  url("https://i.imgur.com/iQad8e3.jpg");
 }
 
 .slide_5 .review_3{
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/원데이, 토크콘서트, 문화살롱3.JPG");
+  url("https://i.imgur.com/pKa1Lcp.jpg");
 }
 
 .slide_5 .review .text_container {
@@ -392,7 +392,7 @@ a {
   width: 100%;
   height: 100%;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-  url("img/-.jpg");
+  url("https://i.imgur.com/xEVs5XY.jpg");
   /* background-size: 100% 100vh; */
   background-position: center;
   background-size: cover;
