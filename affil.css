@@ -127,6 +127,71 @@ a {
 
 }
 
+.condition {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.condition > .title {
+  font-size:40px;
+  font-weight: 600;
+  border-bottom: 0.2em solid #FF1493;
+}
+
+.condition .table_container {
+  background-color: #fafafa;
+  width: 100%;
+  margin-top: 80px;
+  padding: 40px 0;
+  display: table;
+  border-color: grey;
+}
+
+.condition table{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.condition table tbody {
+  /* width: 100%; */
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.condition table tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.condition table th {
+  width: 30%;
+  padding: 20px 30px ;
+  background: #fff;
+  color: black;
+  font-size: 1.125rem;
+  letter-spacing: -0.25px;
+  text-align: left;
+  
+}
+
+.condition table td {
+  width: 70%;
+  padding: 20px 20px;
+  font-size: 0.937rem;
+  color: #666;
+  background: #fff;
+  display: table-cell;
+  vertical-align: inherit;
+  
+}
+
+.condition p {
+  text-align: left;
+  margin: 20px 30px;
+}
+
 .process > .title {
   font-size:40px;
   font-weight: 600;
@@ -146,8 +211,8 @@ a {
 }
 
 .box .content {
-  width: 70%;
-  margin: 50px auto 15px;
+  width: 85%;
+  margin: 40px auto 15px;
   display: flex;
   flex-direction: column;
 }
@@ -175,69 +240,47 @@ a {
   text-align: left;
 }
 
-.condition {
-  margin-top: 130px;
-  margin-bottom: 130px;
+.que:first-child{
+  border-top: 1px solid black;
 }
 
-.condition > .title {
-  font-size:40px;
-  font-weight: 600;
-  border-bottom: 0.2em solid #FF1493;
+.que{
+position: relative;
+padding: 17px 0;
+cursor: pointer;
+font-size: 14px;
+border-bottom: 1px solid #dddddd;
+
 }
 
-.condition .table_container {
-  background-color: #fafafa;
-  width: 100%;
-  margin-top: 80px;
-  padding: 40px 0;
-  display: table;
-  border-color: grey;
+.que::before{
+display: inline-block;
+content: 'Q';
+font-size: 14px;
+color: #006633;
+margin-right: 5px;
 }
 
-table{
-  width: 95%;
-  margin: 0 auto;
+.que.on>span{
+font-weight: bold;
+color: #006633; 
 }
 
-tbody {
-  /* width: 100%; */
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
+.anw {
+display: none;
+  overflow: hidden;
+font-size: 14px;
+background-color: #f4f4f2;
+padding: 27px 0;
 }
 
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-
-th {
-  width: 30%;
-  padding: 20px 30px ;
-  background: #fff;
-  color: black;
-  font-size: 1.125rem;
-  letter-spacing: -0.25px;
-  text-align: left;
-  
-}
-
-td {
-  width: 70%;
-  padding: 20px 20px;
-  font-size: 0.937rem;
-  color: #666;
-  background: #fff;
-  display: table-cell;
-  vertical-align: inherit;
-  
-}
-
-.condition p {
-  text-align: left;
-  margin: 20px 30px;
+.anw::before {
+display: inline-block;
+content: 'A';
+font-size: 14px;
+font-weight: bold;
+color: #666;
+margin-right: 5px;
 }
 
 .inquiry {
