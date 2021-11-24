@@ -127,6 +127,20 @@ a {
 
 }
 
+.cons {
+
+}
+
+.cons_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.cons_box {
+  
+}
+
 .condition {
   margin-top: 130px;
   margin-bottom: 130px;
@@ -239,24 +253,27 @@ a {
 .process p {
   text-align: left;
 }
-
+/* F&Q */
+#Accordion_wrap {
+  text-align: left;
+}
 .que:first-child{
   border-top: 1px solid black;
 }
 
 .que{
 position: relative;
-padding: 17px 0;
+padding: 23px 30px;
 cursor: pointer;
-font-size: 14px;
+font-size: 1.1rem;
 border-bottom: 1px solid #dddddd;
 
 }
 
 .que::before{
 display: inline-block;
-content: 'Q';
-font-size: 14px;
+content: 'Q.';
+font-size: 1.4rem;
 color: #006633;
 margin-right: 5px;
 }
@@ -268,19 +285,41 @@ color: #006633;
 
 .anw {
 display: none;
-  overflow: hidden;
-font-size: 14px;
+overflow: hidden;
+font-size: 1.1rem;
 background-color: #f4f4f2;
-padding: 27px 0;
+padding: 28px 30px;
 }
 
 .anw::before {
 display: inline-block;
-content: 'A';
-font-size: 14px;
+content: 'A.';
+font-size: 1.3rem;
 font-weight: bold;
 color: #666;
 margin-right: 5px;
+}
+
+.cost_table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.cost_table table thead td {
+  font-weight: 600;
+  padding: 30px 0;
+  border-left: solid 2px  #e4e5ed;
+  background-color: #F2F5F7;
+}
+
+.cost_table table tbody td {
+  padding: 30px 0;
+  border: solid 2px #e4e5ed;
+}
+
+.cost_table table .sum {
+  background-color: #F2F5F7;
 }
 
 .inquiry {
@@ -397,15 +436,15 @@ footer .footer_container span {
     width: 80%;
   }
 
-  table{
+  .condition table table{
     width: 100%;
   }
 
-  th {
+  .condition table th {
     width: 40%;
   }
   
-  td {
+  .condition table td {
     width: 60%;
   }
 
