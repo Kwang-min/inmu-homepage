@@ -82,7 +82,7 @@ a {
   width: 100%;
   height: 430px;
   /* padding: 250px 0; */
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
   url("https://cdn.pixabay.com/photo/2015/07/02/10/40/writing-828911_1280.jpg");
   background-position: center;
   background-size: cover;
@@ -102,6 +102,9 @@ a {
 }
 
 .intro {
+  width: 30%;
+  margin: 0 auto;
+  color: #fff;
   text-align: center;
 }
 
@@ -111,20 +114,35 @@ a {
 
 .intro p {
   font-size: 20px;
-  font-family: 'Jua';
 }
 
-.intro img {
+/* .intro img {
   width: 80%;
   margin: 50px auto 100px;
+} */
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.index .target {
+  background-color: #FF1493;
+}
+.index .button {
+  border: solid 2px #e4e5ed;
+  border-radius: 20px;
+  height: 50px;
 }
 
-.line {
-  width: 35px;
-  height: 5px;
-  margin: 30px auto 45px;
+.index .button:hover {
   background-color: #FF1493;
+  color: #fff;
+}
 
+.index .button .text {
+  width: 60%;
+  margin: 12px auto;
+  color: #666;
 }
 
 .cons {
@@ -421,6 +439,21 @@ footer .footer_container span {
 
   .intro img {
     width: 90%;
+  }
+
+  .index {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .index .button {
+    height: 40px;
+  }
+
+  .index .button .text {
+    margin: 8px auto;
+    width: 80%;
   }
 
   .process {
