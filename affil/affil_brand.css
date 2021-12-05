@@ -152,9 +152,11 @@ a {
 }
 
 .condition > .title {
+  width: 17%;
   font-size:40px;
   font-weight: 600;
   border-bottom: 0.2em solid #FF1493;
+  margin: 0 auto;
 }
 
 .condition .table_container {
@@ -220,11 +222,19 @@ a {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
 }
-
+.cons_box {
+  padding: 0 32px;
+  border-right: 4px solid #edf9f9;
+}
+.cons_box:nth-child(3) {
+  border-right: none;
+}
 .cons_box i {
   font-size: 130px;
+  padding-bottom: 20px;
+  color: #379DD6;
 }
 
 
@@ -320,5 +330,13 @@ footer .footer_container span {
     width: 60%;
   }
 
+  .cons_container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .cons_box {
+    border-right: none;
+  }
   
 }
