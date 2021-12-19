@@ -41,7 +41,8 @@ a {
 
 .navbar__logo a {
   /* color:#FF1493; */
-  color: #EDB942;
+  /* color: #EDB942; */
+  color: white;
 }
 
 .navbar__menu {
@@ -55,7 +56,8 @@ a {
 }
 
 .navbar__menu li a:hover {
-  color: #FF1493;
+  /* color: #FF1493; */
+  color: white;
 }
 
 .navbar__icons {
@@ -126,7 +128,8 @@ a {
   grid-gap: 1rem;
 }
 .index .target {
-  background-color: #FF1493;
+  /* background-color: #FF1493; */
+  color: white;
 }
 .index .button {
   border: solid 2px #e4e5ed;
@@ -135,7 +138,8 @@ a {
 }
 
 .index .button:hover {
-  background-color: #FF1493;
+  /* background-color: #FF1493; */
+  background-color: white;
   color: #fff;
 }
 
@@ -148,14 +152,14 @@ a {
 
 .condition {
   margin-top: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .condition > .title {
   width: 17%;
   font-size:40px;
   font-weight: 600;
-  border-bottom: 0.2em solid #FF1493;
+  border-bottom: 0.2em solid white;
   margin: 0 auto;
 }
 
@@ -213,6 +217,19 @@ a {
   margin: 20px 30px;
 }
 
+.ps {
+  width: 100%;
+  border: solid 2px #e4e5ed;
+  margin-bottom: 70px;
+}
+
+.ps .text {
+  text-align: left;
+  margin: 0 auto;
+  
+  padding: 24px 30px;
+}
+
 .cons {
   margin-bottom: 100px;
 }
@@ -226,7 +243,7 @@ a {
 }
 .cons_box {
   padding: 0 32px;
-  border-right: 4px solid #edf9f9;
+  border-right: 4px solid #eff6e4;
 }
 .cons_box:nth-child(3) {
   border-right: none;
@@ -234,7 +251,7 @@ a {
 .cons_box i {
   font-size: 130px;
   padding-bottom: 20px;
-  color: #EDB942;
+  color: #c7ea75;
 }
 
 
