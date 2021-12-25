@@ -149,11 +149,16 @@ a {
 }
 
 .process > .title {
-  width: 22.5%;
   font-size:40px;
   font-weight: 600;
-  border-bottom: 0.2em solid #FF1493;
   margin: 0 auto;
+}
+
+.line{
+  width: 50px;
+  height: 7px;
+  margin: 60px auto 60px;
+  background-color: #FF1493;
 }
 
 .box_container {
@@ -260,7 +265,7 @@ footer .footer_container span {
   }
 
   .intro {
-    width: 60%;
+    width: 80%;
   }
 
   .intro img {

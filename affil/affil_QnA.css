@@ -154,11 +154,16 @@ a {
 }
 
 #Accordion_wrap .title {
-  width: 22.5%;
   font-size:40px;
   font-weight: 600;
-  border-bottom: 0.2em solid #FF1493;
   margin: 30px auto 30px;
+}
+
+.line{
+  width: 50px;
+  height: 7px;
+  margin: 60px auto 60px;
+  background-color: #FF1493;
 }
 
 .que:first-child{
@@ -269,7 +274,7 @@ footer .footer_container span {
   }
 
   .intro {
-    width: 60%;
+    width: 80%;
   }
 
   .intro img {
