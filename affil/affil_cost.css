@@ -120,14 +120,17 @@ a {
   width: 80%;
   margin: 50px auto 100px;
 } */
+
 .index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
+
 .index .target {
   background-color: #FF1493;
 }
+
 .index .button {
   border: solid 2px #e4e5ed;
   border-radius: 20px;
@@ -154,13 +157,21 @@ a {
 .line{
   width: 50px;
   height: 7px;
-  margin: 60px auto 60px;
+  margin: 60px auto 80px;
   background-color: #FF1493;
 }
 
 .unit {
   text-align: right;
   font-size: 20px;
+}
+
+.cost_title {
+  width: 12%;
+  font-size: 25px;
+  border-left: solid 5px #FF1493;
+  margin-bottom: 50px;
+  
 }
 
 .cost_table {
@@ -204,6 +215,43 @@ a {
   
   padding: 24px 30px;
 }
+
+.benefit_title {
+  width: 22%;
+  font-size: 25px;
+  border-left: solid 5px #FF1493;
+  margin-bottom: 50px;
+  
+}
+
+
+.benefit_table {
+  padding: 12px 0 100px;
+}
+
+.benefit_table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  margin-bottom: 80px;
+}
+
+.benefit_table table thead td {
+  font-weight: 600;
+  padding: 30px 0;
+  border: solid 2px  #e4e5ed;
+  background-color: #F2F5F7;
+}
+
+.benefit_table table tbody td {
+  padding: 30px 0;
+  border: solid 2px #e4e5ed;
+}
+
+.benefit_table table .profit {
+  background-color: #F2F5F7;
+}
+
 
 /* for footer */
 
@@ -294,5 +342,13 @@ footer .footer_container span {
     font-size:30px;
   }
 
+  .cost_title {
+    width: 30%;
+  }
+
+  .benefit_title {
+    width: 60%;
+  }
+  
 
 }

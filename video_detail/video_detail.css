@@ -95,7 +95,7 @@ a {
 
 .content iframe {
   width: 100%;
-  height: 515px;
+  height: 592px;
 }
 
 .content .memo{
@@ -167,6 +167,10 @@ footer .footer_container span {
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
+  }
+
+  .content {
+    width: 88%;
   }
 
   .content iframe {

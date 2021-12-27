@@ -172,8 +172,6 @@ a {
 .slide_3 .container {
   padding: 250px 0;
   width: 100%;
-  
-  
 }
 
 .slide_3 .part_1 .text {
@@ -509,7 +507,7 @@ footer .footer_container span {
   }
 
   .slide_3 .part_1 .text h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .slide_3 .part_1 .img_container {
@@ -557,7 +555,7 @@ footer .footer_container span {
   }
 
   .slide_3 .part_3 h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .slide_3 .part_4 {
