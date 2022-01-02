@@ -366,13 +366,14 @@ a {
   width: 90%;
   margin: 0 auto;
   padding-top: 25px;
+  
 }
 
 .slide_5 .review .text {
   
   color: #fff;
   font-size: 1.2rem;
-
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 }
 
 .slide_5 .review .name {

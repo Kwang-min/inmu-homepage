@@ -189,12 +189,14 @@
         <li>
           <div class="review review_1">
             <div class="text_container">
-              <div class="text">
+              <div class="text SynopsisText" id="SynopsisDiv">
                 "일-집-일-집 반복되었던 지루한 일상에 좋은 사람들과
                 음악이 함께하니 채워지지 않던 에너지가 채워지는 느낌이에요.
                 음악 이외에도 서로의 일상을 공유하며 좋은 사람들과 좋은 추억들을
                 만들어가는 재미가 쏠쏠해요"
               </div>
+              <a href="javascript:showplay();" class="btn_more" id="synopMore">더보기</a>
+              <input name="hidTempSynopsis" type="hidden" id="hidTempSynopsis" value="0">
               <div class="name">
                 -동탄점 수강생 정연서님-
               </div>
@@ -221,9 +223,9 @@
             <div class="text_container">
               <div class="text">
                 "사실 별생각 없이 가벼운 마음으로 방문을 했어요
-                (살짝 떠보는 느낌으로 ㅎㅎㅎ)마침 무료 체험 레슨을 받는
-                날이 인뮤 정기공연 날이었는데, 공연을 보며 카타르시스를 느꼈다고나
-                할까요?(웃음)마냥 한 번쯤 해보고 싶다는 생각이 들어 지금까지 재밌게
+                마침 무료 체험 레슨을 받는 날이 인뮤 정기공연 날이었는데, 
+                공연을 보며 카타르시스를 느꼈다고나 할까요?
+                (웃음)마냥 한 번쯤 해보고 싶다는 생각이 들어 지금까지 재밌게
                 하고 있어요"
               </div>
               <div class="name">
@@ -303,7 +305,37 @@
     }
 
   </script>
+  <script>
+    //더보기 토글
+    function showplay() {
+      var flag = $('#hidTempSynopsis');
+      var SynopsisDiv = $('#SynopsisDiv');
+      var flagValue = flag.val();
+      if (flag != null) {
+        if (flagValue == "0") {
+          /*SynopsisDiv.css("height", "auto");*/
+          // SynopsisDiv.css("font-size", "12px");
+          SynopsisDiv.css("overflow", "visible");
+          SynopsisDiv.css("text-overflow", "clip");
+          SynopsisDiv.css("white-space", "initial");
+          $("#synopMore").text("닫기");
+          flag.val("1");
+        }
+        else {
+          //SynopsisDiv.css("height", "77px");
+          SynopsisDiv.css("overflow", "hidden");
+          SynopsisDiv.css("text-overflow", "ellipsis");
+          SynopsisDiv.css("white-space", "nowrap");
 
+          $("#synopMore").text("더보기");
+          flag.val("0");
+        }
+      }
+      else {
+        alert("[더보기] 추가 정보가 없습니다.");
+      }
+    }
+  </script>
   <script>
     AOS.init();
   </script>
