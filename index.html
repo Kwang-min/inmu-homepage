@@ -15,7 +15,8 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
-  <script src="toggle.js" defer></script>
+  <script src="toggle.js" defer></script> <!-- 네비게이션 바 토글(반응형 시에) -->
+  <script src="toggle_review.js" defer></script>
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
@@ -189,17 +190,17 @@
         <li>
           <div class="review review_1">
             <div class="text_container">
-              <div class="text SynopsisText" id="SynopsisDiv">
+              <div class="text text_yeon">
                 "일-집-일-집 반복되었던 지루한 일상에 좋은 사람들과
                 음악이 함께하니 채워지지 않던 에너지가 채워지는 느낌이에요.
                 음악 이외에도 서로의 일상을 공유하며 좋은 사람들과 좋은 추억들을
                 만들어가는 재미가 쏠쏠해요"
               </div>
-              <a href="javascript:showplay();" class="btn_more" id="synopMore">더보기</a>
-              <input name="hidTempSynopsis" type="hidden" id="hidTempSynopsis" value="0">
-              <div class="name">
+              
+              <div class="name name_yeon">
                 -동탄점 수강생 정연서님-
               </div>
+              <span class="btn_more_yeon" id="synopMore">더보기</span>
             </div>
           </div>
         </li>
@@ -305,37 +306,7 @@
     }
 
   </script>
-  <script>
-    //더보기 토글
-    function showplay() {
-      var flag = $('#hidTempSynopsis');
-      var SynopsisDiv = $('#SynopsisDiv');
-      var flagValue = flag.val();
-      if (flag != null) {
-        if (flagValue == "0") {
-          /*SynopsisDiv.css("height", "auto");*/
-          // SynopsisDiv.css("font-size", "12px");
-          SynopsisDiv.css("overflow", "visible");
-          SynopsisDiv.css("text-overflow", "clip");
-          SynopsisDiv.css("white-space", "initial");
-          $("#synopMore").text("닫기");
-          flag.val("1");
-        }
-        else {
-          //SynopsisDiv.css("height", "77px");
-          SynopsisDiv.css("overflow", "hidden");
-          SynopsisDiv.css("text-overflow", "ellipsis");
-          SynopsisDiv.css("white-space", "nowrap");
-
-          $("#synopMore").text("더보기");
-          flag.val("0");
-        }
-      }
-      else {
-        alert("[더보기] 추가 정보가 없습니다.");
-      }
-    }
-  </script>
+  
   <script>
     AOS.init();
   </script>
