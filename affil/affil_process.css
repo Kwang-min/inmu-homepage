@@ -256,6 +256,10 @@ footer .footer_container span {
       display: block;
   }
 
+  .navbar.active{
+    background-color: #fff;
+  }
+
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
