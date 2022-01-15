@@ -373,7 +373,8 @@ a {
   
   color: #fff;
   font-size: 1.2rem;
-  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  /* overflow:hidden; text-overflow:ellipsis; white-space:nowrap; */
+  /* 텍스트 생략하는 소스 */
 }
 
 .slide_5 .review .name {
@@ -381,7 +382,8 @@ a {
   color: #fff;
   font-size: 1.2rem;
   padding-top: 30px;
-  display: none;
+  /* display: none;*/
+  /* 텍스트 생략하는 소스 */
 }
 
 .text.text_yeon.active {
