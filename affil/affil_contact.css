@@ -168,12 +168,19 @@ a {
 
 }
 
+
+
 .inquiry .post_container .post {
   border: solid 2px #e4e5ed;
   border-radius: 17px;
   width: 48%;
   height: 350px;
   margin: 0 12px;
+
+}
+
+.inquiry .post_container .text {
+  font-size: 30px;
 
 }
 
@@ -187,6 +194,14 @@ a {
   font-weight: 600;
   padding-left: 8px;
 }
+
+.inquiry .phone_email .phone,
+.inquiry .phone_email .email {
+ background-color: pink;
+ height: 15px;
+
+}
+
 
 /* for footer */
 

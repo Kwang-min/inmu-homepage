@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/de31adcbb8.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <script src="/parallax.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <script src="toggle.js" defer></script> <!-- 네비게이션 바 토글(반응형 시에) -->
+  <!-- <script src="toggle_review.js" defer></script> -->
+  <!-- 리뷰 더보기 토글인데 안 써도 될 거 같다해서 일단 주석처리 -->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+
+
+  <title>인생뮤직</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <a href="/index.html">인생뮤직</a>
+    </div>
+    <ul class="navbar__menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/branch.html">지점안내</a></li>
+      <li><a href="/affil/affil_brand.html">가맹안내</a></li>
+      <li><a href="/gallery_photo.html">갤러리</a></li>
+    </ul>
+    <ul class="navbar__icons">
+      <li><a href="https://www.instagram.com/in_muu_dongtan/" target='_blank'><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.youtube.com/channel/UCDYvQ5hk1KgSSBj-jpbQ-wg" target='_blank'><i class="fab fa-youtube"></i></a></li>
+
+    </ul>
+    <a href="#" class="navbar__toggleBtn">
+      <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+  <div class="video-container">
+    <div id="player"></div>
+  </div>
+  <!-- <div class="video-container">
+    <div class="video-foreground">
+      <iframe
+        src="https://www.youtube.com/embed/9MiYiluMkik?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=9MiYiluMkik&rel=0&playsinline=1&enablejsapi=1&mute=1"
+        frameborder="0" allowfullscreen="1"
+        allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+  </div> -->
+
+  <section class="slide_1">
+    <div data-aos="fade-up" data-aos-duration="3000" class="content">
+      <h1>인생은 단 한번뿐
+        </h1>
+    </div>
+  </section>
+  <section data-aos="fade-up" data-aos-duration="3000" class="slide_2">
+    <div class="content">
+      <h1 class="text">
+        소중한 시간을 
+        <br>
+        음악과 좋은 사람으로 채우는 곳
+      </h1>
+    </div>
+  </section>
+  <section class="slide_3">
+    <div class="container">
+      <div class="part_1">
+        <div class="text">
+          <h1 data-aos="fade-up" data-aos-duration="2000">
+          인뮤에서는 
+          자신들의 이야기를 <br> 
+          음악으로 녹여내 <br>
+          그 때, 그 시간을 기록합니다
+          </h1>
+          <br><br><br>
+          <span>
+            
+          </span>
+        </div>
+        <div class="img_container" data-aos="fade-up" data-aos-duration="2500">
+          <img src="https://i.imgur.com/SrPS76Q.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="part_2">
+        <img src="https://i.imgur.com/dbv3G4j.jpg" alt="" data-aos="fade-right" data-aos-duration="3000">
+        <div class="text" data-aos="fade-up" data-aos-duration="3000">
+          <h1>
+            지친 마음을 달래는 퇴근송
+          </h1>
+          <h2>
+            수강생들의 저녁을 따스하게 하자는 취지의 공연입니다.
+            정기적인 공연으로 퇴근 후에 힐링하세요.
+            (지점마다 공연 일정 다를 수 있음)
+            <br><br>
+            당신의 빛나는 목소리를 담은
+            인생보이스.
+            경험하기 힘든 특별한 순간을
+            인뮤가 뮤직비디오로 담아드려요.
+          </h2>
+        </div>
+
+
+      </div>
+      <div class="part_3">
+        <div class="img_container">
+          <img src="https://i.imgur.com/Zi0kdjT.jpg" alt="" data-aos="fade-up" data-aos-duration="3000">
+          <h1 data-aos="fade-up" data-aos-duration="3000">
+            사람들과 음악으로 소통하는 합주데이<br>
+            현실판 비긴어게인 <br>
+            음악에 진심인 사람들이 모이다
+          </h1>
+        </div>
+      </div>
+
+      <div class="part_4">
+        <div class="img_container">
+          <img src="https://i.imgur.com/iQad8e3.jpg" alt="" data-aos="fade-up" data-aos-duration="3000">
+          <h1 data-aos="fade-up" data-aos-duration="3000">
+            원데이클래스, 토크 콘서트, 문화 살롱, 사진 전시회.<br> 
+            쉼과 소통이 있는 다양한 경험을 선사합니다
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/원데이, 토크콘서트, 문화살롱2.jpg"></div> -->
+
+  <section class="slide_4">
+    <div class="content">
+      <h1>
+        인생뮤직은 이렇게 배워요!
+      </h1>
+      <ul>
+        <li>
+          <div class="icon_img">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="bold">
+            체험 레슨 / 연습실
+          </div>
+          <div class="text">
+            무료 체험레슨과 24시간 언제든 자유로운 연습실 사용!
+          </div>
+        </li>
+        <li>
+          <div class="icon_img">
+            <i class="fas fa-guitar"></i>
+          </div>
+          <div class="bold">
+            커뮤니티 공간
+          </div>
+          <div class="text">
+            커뮤니티 공간에서 사람들과 교류하고 친해져요!
+          </div>
+        </li>
+        <li>
+          <div class="icon_img">
+            <i class="fas fa-microphone"></i>
+          </div>
+          <div class="bold">
+            퇴근송
+          </div>
+          <div class="text">
+            마음맞는 사람들과 합주하고 함께 공연을!
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/원데이, 토크콘서트, 문화살롱4.jpg"></div> -->
+
+  <section class="slide_5">
+    <div class="content">
+      <h1>"인생뮤직 수강생들의 후기"</h1>
+      <ul>
+        <li>
+          <div class="review review_1">
+            <div class="text_container">
+              <div class="text text_yeon">
+                "일-집-일-집 반복되었던 지루한 일상에 좋은 사람들과
+                음악이 함께하니 채워지지 않던 에너지가 채워지는 느낌이에요.
+                음악 이외에도 서로의 일상을 공유하며 좋은 사람들과 좋은 추억들을
+                만들어가는 재미가 쏠쏠해요"
+              </div>
+              
+              <div class="name name_yeon">
+                -동탄점 수강생 정연서님-
+              </div>
+              <!-- <span class="btn_more_yeon" id="synopMore">더보기</span> -->
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="review review_2">
+            <div class="text_container">
+              <div class="text">
+                "10년 전 쳤던 피아노... 손이 굳어 연주할 수 있을까라는 
+                두려움이 있었는데 편한 분위기의 인테리어와 친근한 레슨으로
+                마치 언제 걱정했냐는 듯 공연까지 하고 있는 저를 발견할 수 
+                있었어요! 여러분들도 도전해 보세요 할 수 있어요!" 
+              </div>
+              <div class="name">
+                -인천점 수강생 선우정인님-
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="review review_3">
+            <div class="text_container">
+              <div class="text">
+                "사실 별생각 없이 가벼운 마음으로 방문을 했어요
+                마침 무료 체험 레슨을 받는 날이 인뮤 정기공연 날이었는데, 
+                공연을 보며 카타르시스를 느꼈다고나 할까요?
+                (웃음)마냥 한 번쯤 해보고 싶다는 생각이 들어 지금까지 재밌게
+                하고 있어요"
+              </div>
+              <div class="name">
+                -천안점 수강생 신지혜님-
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide_6">
+
+    <div class="content">
+      <h1>
+        정기 공연, 모임이 있는 음악 학원
+        <br>
+        인생 뮤직과 함께해요
+      </h1>
+      <span>
+        <a href="branch.html">지점안내 페이지로</a>
+        
+      </span>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer_container">
+      <h3>인생뮤직</h3>
+      <br>
+      <span>사업자 등록번호 : 111-11-11111 | 대표 : 권대희</span>
+      <br />
+      <span>호스팅 서비스 : 카페24 | 통신판매업 신고번호 : 1111-111111-11111 사업자정보확인</span>
+      <br />
+      <span>(본점)경기도 화성시 동탄중심상가2길 5</span>
+      <br><br>
+      <span>© 2021 인생뮤직 ALL RIGHTS RESERVED​</span>
+    </div>
+  </footer>
+
+  <script>
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+
+      player = new YT.Player('player', {
+
+        videoId: 'mD4SkcDztm8',
+
+        playerVars: {
+          'autoplay': 1, 'playsinline': 1, 'playsinline': 1,
+          'loop': 1, 'controls': 0, 'disablekb': 1, 'enablejsapi': 1,
+          'fs': 0, 'mute': 1, 'playlist': 'mD4SkcDztm8',
+        },
+
+        events: { 'onReady': onPlayerReady }
+
+      });
+
+    }
+
+    function onPlayerReady(e) {
+
+      e.target.mute();
+
+      e.target.playVideo();
+
+
+    }
+
+  </script>
+  
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 200) {
+          $(".navbar").css("background", "#ffffff");
+        }
+        else {
+          $(".navbar").css("background", "transparent");
+        }
+      })
+    })
+  </script>
+
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "f12693ad-7bed-4340-8bba-dfdc3b03c2c1"
+    });
+  </script>
+  <!-- End Channel Plugin -->
+
+</body>
+
+</html>
