@@ -4,22 +4,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>인생뮤직</title>
+  
   <script src="https://kit.fontawesome.com/de31adcbb8.js" crossorigin="anonymous"></script>
+  <script src="toggle.js" defer></script> <!-- 네비게이션 바 토글(반응형 시에) -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
   <nav class="navbar">
+    <div class="navbar__logo">
+        <a href="">인생뮤직</a>
+    </div>
+    <ul class="navbar__menu ">
+        <li class="navbar__menu_contents"><a>Home</a>
+          <ul class="navbar__sub_menu navbar__sub_menu_contents">
+            <li><a href="">인뮤 브이로그</a></li>
+            <li><a href="">인뮤 퇴근송</a></li>
+            <li><a href="">인뮤 갤러리</a></li>
+          </ul>
+        </li>
+        <li><a >Gallery</a></li>
+        <li><a >Wedding</a></li>
+        <li class="navbar__menu_afil"><a >FAQ</a>
+          <ul class="navbar__sub_menu navbar__sub_menu_afil">
+            <li><a href="">인생뮤직 브랜드</a></li>
+            <li><a href="">창업 절차</a></li>
+            <li><a href="">창업 비용 및 수익</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">창업 문의</a></li>
+          </ul>
+        </li>
+        <li><a >Bookings</a></li>
+    </ul>
+    <ul class="navbar__icons">
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook-f"></i></li>
+        
+    </ul>
+    <a href="#" class="navbar__toggleBtn">
+        <i class="fas fa-bars"></i>
+    </a>
+</nav>
+
+
+  
+  <!-- <nav class="navbar">
     <div class="navbar__logo">
       <a href="/index.html">인생뮤직</a>
     </div>
     <ul class="navbar__menu">
       <li><a href="/index.html">INMUU</a></li>
-      <li><a href="/gallery_photo.html">인뮤 컨텐츠</a></li>
+      <li class="navbar__menu_contents"><a>인뮤 컨텐츠</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_contents">
+          <li><a href="">인뮤 브이로그</a></li>
+          <li><a href="">인뮤 퇴근송</a></li>
+          <li><a href="">인뮤 갤러리</a></li>
+        </ul>
+      </li>
       <li><a href="/branch.html">지점 안내</a></li>
-      <li><a href="/affil/affil_brand.html">창업 안내</a>
-        <ul class="navbar__sub_menu">
+      <li class="navbar__menu_afil"><a>창업 안내</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_afil">
           <li><a href="">인생뮤직 브랜드</a></li>
           <li><a href="">창업 절차</a></li>
           <li><a href="">창업 비용 및 수익</a></li>
@@ -37,7 +82,11 @@
     <a href="#" class="navbar__toggleBtn">
       <i class="fas fa-bars"></i>
     </a>
-  </nav>
+  </nav> -->
+
+
+
+
   <div class="main_carousel">
 
   </div>
