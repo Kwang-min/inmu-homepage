@@ -156,9 +156,9 @@
   margin-right: 40px;
 } */
 
-.manual-btn:hover{
+/* .manual-btn:hover{
   background-color: #fff;
-}
+} */
 
 #radio1:checked ~ .first {
   margin-left: 0;
@@ -270,6 +270,9 @@ footer .footer_container span {
       padding: 8px 24px;
 
   }
+  .navbar__logo a{
+    font-size: 18px;
+  }
   .navbar__menu{
       display: none;
       flex-direction: column;
@@ -315,5 +318,20 @@ footer .footer_container span {
 
   .navbar__sub_menu_afil.active {
     display: block;
+  }
+
+  /* for main carousel */
+  .slider {
+    height: 450px;
+    
+  }
+  
+  .slides {
+    height: 450px;
+    
+  }
+
+  .slide img {
+    height: 450px;
   }
 }
