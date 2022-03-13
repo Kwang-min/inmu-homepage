@@ -237,10 +237,6 @@
   background: #fff;
 }
 
-
-
-
-
 footer {
   background-color: #17171C;
   width: 100%;
@@ -333,5 +329,23 @@ footer .footer_container span {
 
   .slide img {
     height: 450px;
+  }
+
+  
+
+  .navigation-manual {
+    margin-top: -80px;
+  }
+
+  .manual-btn {
+    padding: 1.5px 25px;
+  }
+
+  .navigation-auto {
+    margin-top: 370px;
+  }
+
+  .navigation-auto div {
+    padding: 1.5px 25px;
   }
 }
