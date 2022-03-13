@@ -95,22 +95,22 @@
 .main_carousel {
   
 }
-m.carousel-inner {
+.main_carousel .carousel-inner {
   width: 100%;
 }
 
-.carousel-item {
+.main_carousel .carousel-item {
   width: 100%;
 }
 
-.carousel-item > img {
+.main_carousel .carousel-item > img {
   height: 600px;
 }
 
-.carousel-indicators {
+.main_carousel .carousel-indicators {
   bottom: 50px;
 }
-.carousel-indicators [data-bs-target] {
+.main_carousel .carousel-indicators [data-bs-target] {
   width: 60px;
   margin-left: 0;
   margin-right: 0;
@@ -129,7 +129,23 @@ m.carousel-inner {
 }
 
 .vlog_review_container .vlog_container {
+ width: 60%;
+}
 
+iframe {
+  width: 80%;
+  height: 100%;
+  
+}
+
+.vlog_review_container .review_container {
+  width: 40%;
+}
+
+.review_container .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
 
 .link_conatainer {
@@ -226,8 +242,14 @@ footer .footer_container span {
 
 
 
-  .carousel-item > img {
+  .main_carousel .carousel-item > img {
     height: 500px;
+  }
+
+  .vlog_review_container {
+    
+    flex-direction: column;
+  
   }
   
 }
