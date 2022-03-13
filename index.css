@@ -95,7 +95,21 @@
 .main_carousel {
   
 }
+m.carousel-inner {
+  width: 100%;
+}
 
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-item > img {
+  height: 600px;
+}
+
+.carousel-indicators {
+  bottom: 50px;
+}
 .carousel-indicators [data-bs-target] {
   width: 60px;
   margin-left: 0;
@@ -209,21 +223,12 @@ footer .footer_container span {
     display: block;
   }
 
+
+
+
+  .carousel-item > img {
+    height: 500px;
+  }
   
 }
 
-.carousel-inner {
-  width: 100%;
-}
-
-.carousel-item {
-  width: 100%;
-}
-
-.carousel-item > img {
-  height: 600px;
-}
-
-.carousel-indicators {
-  bottom: 50px;
-}
