@@ -93,130 +93,14 @@
 /* main carousel start */
 .main_carousel {
   /* height: 100vh; */
-  display: flex;
+  /* 테스트 위해 아래 부분 주석 처리*/
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  background: #23E3C9;
-}
-
-.slider {
-  /* width: 800px; */ /*강의에선 넓이 800세팅*/
+  background: #23E3C9; */
   width: 100%;
-  /* height: 500px; */ /*강의에선 높이 500세팅*/
-  height: 600px;
-  /* border-radius: 10px; */
-  overflow: hidden;
 }
 
-.slides {
-  width: 500%;
-  /* height: 500px; */ /*강의에선 높이 500세팅*/
-  height: 600px;
-  display: flex;
-}
-
-.slides input {
-  display: none;
-}
-
-.slide {
-  width: 20%;
-  /* transition: 2s; */
-  transition: 0.5s;
-}
-
-.slide img {
-  /* width: 800px; */ /*강의에선 넓이 800세팅*/
-  width: 100%;
-  /* height: 500px; */ /*강의에선 높이 500세팅*/
-  height: 600px;
-
-}
-
-.navigation-manual {
-  position: absolute;
-  /* width: 800px; */ /*강의에선 넓이 800세팅*/
-  width: 100%;
-  margin-top: -70px;
-  display: flex;
-  justify-content: center;
-  
-}
-
-.manual-btn {
-  /* border:2px solid #40D3DC; */
-  /* background-color: gray; */ 
-  /* manual-btn 이랑 auto 두개 겹치니까 auto 모드일 때 배경 색 안 바뀌어서 manual 배경 색 꺼봄
-  (어차피 겹쳐서 보일 거니까 회색으로 보임) */
-  /* padding: 5px; */
-  padding: 3px 25px;
-  /* border-radius: 10px; */
-  cursor: pointer;
-  transition: 1s;
-}
-
-/* .manual-btn:not(:last-child) {
-  margin-right: 40px;
-} */
-
-/* .manual-btn:hover{
-  background-color: #fff;
-} */
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -60%;
-}
-
-
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  /* width: 800px; */ /*강의에선 넓이 800세팅*/
-  width: 100%;
-  justify-content: center;
-  margin-top: 530px;
-}
-
-.navigation-auto div {
-  /* border: 2px solid #40D3DC; */
-  background-color: gray;
-  /* padding: 5px; */
-  padding: 3px 25px;
-  /* border-radius: 10px; */
-  transition: 1s;
-}
-
-/* .navigation-auto div:not(:last-child) {
-  margin-right: 40px;
-} */
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #fff;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #fff;
-}
 
 /* main carousel end */
 
@@ -359,3 +243,14 @@ footer .footer_container span {
   }
 }
 
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-item > img {
+  width: 100%;
+}
