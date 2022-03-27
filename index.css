@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+  height: 100%;
+}
+
 .navbar{
   /* position: fixed;
   width: 100%; */
@@ -15,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 20px 32px;
+  padding: 4px 32px;
   box-sizing: border-box;
 }
 
@@ -98,15 +103,17 @@
   
 }
 .main_carousel .carousel-inner {
-  width: 100%;
+ 
 }
 
 .main_carousel .carousel-item {
-  width: 100%;
+  
 }
 
 .main_carousel .carousel-item > img {
-  height: 600px;
+  width: 100%;
+  height: 85vh;
+  
 }
 
 .main_carousel .carousel-indicators {
@@ -133,14 +140,25 @@
  width: 60%;
 }
 
+.vlog_container {
+  display: flex;
+  flex-direction: row;
+}
+
 .vlog_container .video_container{
   width: 80%;
   margin: 90px auto;
 }
 
+.vlog_container .video_container > p {
+  font-size: 35px;
+  font-weight: 600;
+}
+
 iframe {
   width: 80%;
   height: 500px;
+  border-radius: 15px;
 }
 
 .vlog_review_container .review_container {
@@ -152,7 +170,10 @@ iframe {
   height: 450px;
   margin: 50px auto 0;
 }
-
+.review_container .carousel > p {
+  font-size: 35px;
+  font-weight: 600;
+}
 .review_container .carousel-indicators{
   margin-bottom:-85px;
 }
@@ -173,14 +194,20 @@ iframe {
 
 .link_container {
   width: 100%;
-  height: 500px;
+  height: 65.5%;
   background: #FADB03;
   display: flex;
 }
 
 .link_container .container1{
   width: 40%;
+  height: 100%;
   background-color: red;
+}
+
+.link_container .container1 > img{
+  width: 100%;
+  height: 100%;
 }
 
 .link_container .container2{
@@ -201,9 +228,19 @@ iframe {
   background-color: gray;
 }
 
+.link_container .container2 .sub_container1 .small_container1 > img{
+  width: 100%;
+  height: 100%;
+}
+
 .link_container .container2 .sub_container1 .small_container2{
   width: 40%;
   background-color: #FE6512;
+}
+
+.link_container .container2 .sub_container1 .small_container2 > img{
+  width: 100%;
+  height: 100%;
 }
 
 .link_container .container2 .sub_container2{
@@ -217,11 +254,20 @@ iframe {
   background-color: aquamarine;
 }
 
+.link_container .container2 .sub_container2 .small_container1 > img{
+  width: 100%;
+  height: 100%;
+}
+
 .link_container .container2 .sub_container2 .small_container2{
   width: 50%;
   background-color: #d49466;
 }
 
+.link_container .container2 .sub_container2 .small_container2 > img {
+  width: 100%;
+  height: 100%;
+}
 
 
 .follow_us_container {
@@ -326,7 +372,7 @@ footer .footer_container span {
 
 
   .main_carousel .carousel-item > img {
-    height: 500px;
+    height: 250px;
   }
 
 
