@@ -3,9 +3,11 @@ const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".navbar__menu");
 const icons = document.querySelector(".navbar__icons");
 
+const inmuuMenuButton = document.querySelector(".navbar__menu_inmuu");
 const contentsMenuButton = document.querySelector(".navbar__menu_contents");
 const afilMenuButton = document.querySelector(".navbar__menu_afil");
 
+const inmuuSubmenu = document.querySelector(".navbar__sub_menu_inmuu");
 const contentsSubmenu = document.querySelector(".navbar__sub_menu_contents");
 const afilSubmenu = document.querySelector(".navbar__sub_menu_afil");
 
@@ -14,6 +16,11 @@ toggleBtn.addEventListener("click", () => {
     navbar.classList.toggle('active')
     menu.classList.toggle('active')
     icons.classList.toggle('active')
+})
+
+// 모바일에서 인뮤 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
+inmuuMenuButton.addEventListener("click",() => {
+    inmuuSubmenu.classList.toggle('active');
 })
 
 // 모바일에서 인뮤컨텐츠 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
