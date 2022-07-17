@@ -10,11 +10,15 @@
 html, body{
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 .navbar{
-  /* position: fixed;
-  width: 100%; */
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -60,7 +64,6 @@ html, body{
 .navbar__sub_menu {
   padding: 12px 12px;
   position: absolute;
-  opacity: 0;
   visibility: hidden;
   background: black;
   z-index: 1;
@@ -72,7 +75,7 @@ html, body{
 }
 
 .navbar__menu > li:hover .navbar__sub_menu {
-  opacity: 1;
+  background-color: rgba( 255, 255, 255, 0.2 );
   visibility: visible;
 }
 
@@ -113,7 +116,7 @@ html, body{
 
 .main_carousel .carousel-item > img {
   width: 100%;
-  height: 85vh;
+  /* height: 85vh; */
   
 }
 
@@ -127,6 +130,36 @@ html, body{
 }  
 
 /* main carousel end */
+
+.banners {
+  width: 80%;
+  margin: 0 auto;
+  height: 700px;
+  display:flex
+}
+
+.banners > .banner {
+  width: 22%;
+  margin: 30px auto;
+  height: 500px;
+
+  
+}
+.banners > .banner > img {
+  width: 100%;
+  height: 55%;
+}
+
+.banners > .banner > .text_container {
+  border:1px solid #fff;
+  height: 45%;
+}
+
+.banners > .banner > .text_container > .title {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
 
 
 
@@ -312,6 +345,7 @@ footer .footer_container h3 {
 }
 
 footer .footer_container span {
+  
   color: #6A7182;
   font-family: 'Jua';
 }
@@ -319,9 +353,10 @@ footer .footer_container span {
 
 @media screen and (max-width:768px) {
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 8px 24px;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
 
   }
   .navbar__logo a{
