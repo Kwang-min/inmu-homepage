@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인생뮤직</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <script src="https://kit.fontawesome.com/de31adcbb8.js" crossorigin="anonymous"></script>
+  <script src="toggle.js" defer></script> <!-- 네비게이션 바 토글(반응형 시에) -->
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="free_class.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__logo">
+        <a href="">인생뮤직</a>
+    </div>
+    <ul class="navbar__menu ">
+        <li class="navbar__menu_inmuu"><a>INMUU <br>STORY</a>
+          <ul class="navbar__sub_menu navbar__sub_menu_inmuu">
+            <li><a href="">인뮤 ABOUT</a></li>
+            <li><a href="">인뮤 HISTORY</a></li>
+            <li><a href="">인뮤 NEWS</a></li>
+            <li><a href="">인뮤 &</a></li>
+          </ul>
+        </li>
+        <li class="navbar__menu_contents"><a>OUR <br>CONTENTS</a>
+          <ul class="navbar__sub_menu navbar__sub_menu_contents">
+            <li><a href="">인생 퇴근송</a></li>
+            <li><a href="">인생 VOICE  &nbsp; &nbsp; &nbsp;</a></li>
+            <li><a href="">인뮤 LIVE</a></li>
+            <li><a href="">인뮤 노래방</a></li>
+            <li><a href="">합주 데이</a></li>
+          </ul>
+        </li>
+        <li><a >지점안내</a></li>
+        <li class="navbar__menu_afil"><a >FRANCHISE <br> 창업 안내</a>
+          <ul class="navbar__sub_menu navbar__sub_menu_afil">
+            <li><a href="">인생뮤직 브랜드</a></li>
+            <li><a href="">창업 절차</a></li>
+            <li><a href="">창업 비용 및 수익</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">창업 문의</a></li>
+          </ul>
+        </li>
+    </ul>
+    <ul class="navbar__icons">
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook-f"></i></li>
+        
+    </ul>
+    <a href="#" class="navbar__toggleBtn">
+        <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+  <section class="intro">
+    <div class="text">
+      <h1>ONEDAY CLASS</h1>
+      <p>
+        SINCE 2019 인생뮤직 <br> <br>
+        각 지점별 공연 및 이벤트 확인,<br>
+        인뮤의 다양한 스토리에 귀 기울여주세요.  
+      </p>
+    </div>
+    
+  </section>
+
+  <div class="content_container">
+    <div class="content">
+      <div class="text_container">
+        <h1>음악과 함께하는 새로운 일상, 체험 해보기! <br>
+            FREE ONE DAY CLASS
+        </h1>
+        <div class="article">
+          <br><br><br>
+          어렵게만 느껴지던 음악, 인생뮤직과 더 가깝게.
+          <br><br>
+          마음 한 켠에 어렸을 적 못해봤던 악기들 그리고 노래들<br>
+          아쉽게 생각하며 이번에도 놓치려 하고 있는 건 아닌가요?<br>
+          하고 싶은 마음이 들면 어느 때라도 인생 뮤직으로 오세요<br>
+          <br><br>
+          공부처럼 어렵고 딱딱하게만 느껴지는 음악이 아닌 <br>
+          사람과 사람이 만나 함께 소통하는 음악
+          <br><br>
+          예약을 통해 좀 더 쉽고 빠르게 체험레슨을 받아 볼 수 있어요<br>
+          당신의 숨통을 틔이게 해줄 음악의 세계에<br>
+          부담없이 들어오세요.
+          <br><br>
+          무료체험레슨은 우측 배너에서 지점선택시<br>
+          예약화면으로 바로 이동합니다.
+        </div>
+        
+      </div>
+      <div class="banner_container">
+        <img src="img/원데이, 토크콘서트, 문화살롱.JPG" alt="">
+        <div class="text_box">
+          <h1>ONE DAY CLASS <br> 예약 바로가기</h1>
+          <form name=move  method=post>
+            <select name=url onchange="moveurl(this.value);">
+              <option value=''>지점 선택</option>
+              <option value='https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81/place/1559342048?placePath=%3Fentry=pll%26from=nx%26fromNxList=true'>동탄점</option>
+              <option value='http://www.google.co.kr'>구글</option>
+              <option value='http://www.naver.com'>네이버</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <footer>
+    <div class="footer_container">
+      <h3>인생뮤직</h3>
+      <br>
+      <span>사업자 등록번호 : 111-11-11111 | 대표 : 권대희</span>
+      <br />
+      <span>호스팅 서비스 : 카페24 | 통신판매업 신고번호 : 1111-111111-11111 사업자정보확인</span>
+      <br />
+      <span>(본점)경기도 화성시 동탄중심상가2길 5</span>
+      <br><br>
+      <span>© 2021 인생뮤직 ALL RIGHTS RESERVED​</span>
+    </div>
+  </footer>
+
+  <!-- for carousel start -->
+  <script>
+    function moveurl(url) {
+      if (url == '') {
+        
+      } else {
+        window.open(url);
+      }
+      
+    }
+
+    var counter = 1;
+    setInterval(function() {
+      document.getElementById('radio' + counter).checked = true; 
+      counter++;
+      if(counter > 4) {
+        counter = 1;
+      }
+    },5000);
+  </script>
+  <!-- for carousel end-->
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "f12693ad-7bed-4340-8bba-dfdc3b03c2c1"
+    });
+  </script>
+  <!-- End Channel Plugin -->
+
+</body>
+</html>

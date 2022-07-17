@@ -213,14 +213,7 @@
       </div>
     </div>
   </div>
-  <form name=move  method=post>
-    <select name=url onchange="moveurl(this.value);">
-      <option value=''>-----------------</option>
-      <option value='https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81/place/1559342048?placePath=%3Fentry=pll%26from=nx%26fromNxList=true'>동탄점</option>
-      <option value='http://www.google.co.kr'>구글</option>
-      <option value='http://www.naver.com'>네이버</option>
-    </select>
-  </form>
+  
 
   <footer>
     <div class="footer_container">
@@ -239,7 +232,7 @@
   <!-- for carousel start -->
   <script>
     // function moveurl(url) {     location.href = url;}
-    function moveurl(url) {window.open(url);}
+    
 
     var counter = 1;
     setInterval(function() {
