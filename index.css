@@ -134,7 +134,7 @@ html, body{
 .banners {
   width: 80%;
   margin: 0 auto;
-  height: 700px;
+  min-height: 700px;
   display:flex
 }
 
@@ -328,6 +328,7 @@ iframe {
   justify-content: center;
 }
 
+
 footer {
   background-color: #17171C;
   width: 100%;
@@ -508,6 +509,14 @@ footer .footer_container span {
   }
   
   .follow_us_container .text {
+    width: 80%;
+  }
+
+  .banners {
+    flex-direction: column;
+  }
+  
+  .banners > .banner {
     width: 80%;
   }
   
