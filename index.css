@@ -164,34 +164,34 @@ html, body{
 
 .video-container {
   width: 75%;
-  min-height: 500px;
+  min-height: 80%;
   margin: 0 auto;
   /* display: flex; */
   background-image: url('img/자신들의 이야기를.JPG');
   background-size: cover;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
 .text-area {
   color: #fff;
   font-size: 35px;
   position:absolute;
-  top: 1670px;
+  top: 0;
   bottom: 0;
   right: 0;
-  left: 300px;
+  left: 0;
 }
 
 
 iframe {
   position:absolute;
-  top: 1670px;
+  top: 230%;
   bottom: 0;
   right: 0;
-  left: 700px;
-  width: 700px;
-  height: 400px;
+  left: 40%;
+  width: 40%;
+  height: 50%;
 }
 
 
