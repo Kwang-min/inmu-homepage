@@ -142,7 +142,7 @@ html, body{
 }
 
 .content_container > .news_box {
- height:350px;
+ min-height:350px;
  border: 1px solid black;
  margin-top: 40px;
  display: flex;
@@ -256,6 +256,22 @@ footer .footer_container span {
     display: block;
   }
 
+  .content_container > .news_box {
+    flex-direction: column;
+  }
+
+  .content_container > .news_box_2 {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .content_container > .news_box > img{
+  width:100%;
+  }
+
+  .content_container > .news_box > .text_area{
+  width:100%;
+  }
 
 
 
