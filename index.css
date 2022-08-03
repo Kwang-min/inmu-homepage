@@ -164,40 +164,40 @@ html, body{
 
 .video-container {
   width: 75%;
-  min-height: 80%;
-  margin: 0 auto;
-  /* display: flex; */
-  background-image: url('img/자신들의 이야기를.JPG');
+  margin: 0 auto 80px;
+  display: flex;
+  background-image: url('img/KakaoTalk_20220801_170225518.png');
   background-size: cover;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+
 }
 
 .text-area {
+  width: 40%;
   color: #fff;
   font-size: 35px;
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  
+}
+
+.video-area {
+  width: 60%;
+  display: flex;
+  align-items: center;
+
 }
 
 
 iframe {
-  position:absolute;
-  top: 230%;
-  bottom: 0;
-  right: 0;
-  left: 40%;
-  width: 40%;
-  height: 50%;
+  
+  width: 500px;
+  height: 300px;
+ 
 }
 
 
 .swiper-container {
   width: 75%;
-	height:420px;
+  padding: 100px 0;
+	/* height:420px; */
 }
 .swiper-slide {
 	text-align:center;
@@ -209,6 +209,20 @@ iframe {
 	box-shadow:0 0 5px #555;
 	max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
 	/* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+}
+
+.title-for-swiper-community {
+  color: #fff;
+  font-size: 45px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.title-for-swiper-place {
+  color: #fff;
+  font-size: 45px;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .modal {
@@ -613,6 +627,20 @@ footer .footer_container span {
   .banners > .banner {
     width: 80%;
   }
+
+  .video-container {
+    flex-direction: column;
+  }
+
+  .text-area {
+    width: 80%;
+  }
+  
+  .video-area {
+    width: 80%;
+  
+  }
+  
 
   .modalBox {
     top: 20%;
