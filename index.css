@@ -132,22 +132,38 @@ html, body{
 /* main carousel end */
 
 .banners {
-  width: 80%;
-  margin: 0 auto;
-  min-height: 700px;
-  display:flex
+  width: 90%;
+  max-width: 1240px;
+  margin: 50px auto;  
+  display: grid;
+  /* 가로크기? */
+  grid-template-columns: repeat(3, 1fr);
+  /* 높이는 네가 알아서 해  */
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 
 .banners > .banner {
-  width: 22%;
-  margin: 30px auto;
-  height: 500px;
-
-  
+  background: black;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  transition: 0.4s;
 }
+
+.banners > .banner:hover {
+  top: -2px;
+}
+
 .banners > .banner > img {
   width: 100%;
-  height: 55%;
+
 }
 
 .banners > .banner > .text_container {
@@ -156,30 +172,41 @@ html, body{
 }
 
 .banners > .banner > .text_container > .title {
+  padding: 20px;
   color: white;
   font-weight: 600;
+  font-size: 35px;
+}
+
+.banners > .banner > .text_container > .text {
+  border-top: 1px solid grey;
+  padding: 20px 20px 70px;
+  color: white;
   font-size: 25px;
 }
+
+/* 프리클래스만 배경 색 흰색으로 */
 
 
 .video-container {
   width: 75%;
+  padding: 100px 0;
   margin: 0 auto 80px;
   display: flex;
+  /* align-items:center;  */
+	justify-content:space-around;
   background-image: url('img/KakaoTalk_20220801_170225518.png');
   background-size: cover;
 
 }
 
 .text-area {
-  width: 40%;
   color: #fff;
   font-size: 35px;
   
 }
 
 .video-area {
-  width: 60%;
   display: flex;
   align-items: center;
 
@@ -207,21 +234,28 @@ iframe {
 }
 .swiper-slide img {
 	box-shadow:0 0 5px #555;
-	max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+  width: 95%;
+	max-width:100%; 
+  /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
 	/* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+  height: 280px;
+}
+
+.swiper-for-place .swiper-button-prev {
+  
 }
 
 .title-for-swiper-community {
   color: #fff;
   font-size: 45px;
-  padding: 60px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
 .title-for-swiper-place {
   color: #fff;
   font-size: 45px;
-  padding: 60px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -526,11 +560,11 @@ footer .footer_container span {
 
 
   .main_carousel .carousel-item > img {
-    height: 250px;
+    height: 200px;
   }
 
   .main_carousel .carousel-indicators {
-    bottom: 10px;
+    bottom: 0px;
   }
 
   /* .vlog_review_container {
@@ -621,26 +655,35 @@ footer .footer_container span {
   } */
 
   .banners {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 80%;
   }
   
   .banners > .banner {
-    width: 80%;
+    
   }
 
   .video-container {
+    width:100%;
+    padding: 50px 0;
     flex-direction: column;
+    align-items:center;
   }
 
   .text-area {
     width: 80%;
+    margin-bottom: 50px;
+    font-size: 30px;
   }
   
   .video-area {
-    width: 80%;
+    width: 100%;
   
   }
   
+  .swiper-slide img {
+    height: 280px;
+  }
 
   .modalBox {
     top: 20%;
