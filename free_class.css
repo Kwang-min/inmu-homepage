@@ -102,7 +102,7 @@ html, body{
 .intro {
   width: 100%;
   height: 150px;
-  padding: 250px 0;
+  padding: 170px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
   url("img/KakaoTalk_20211106_135901402.jpg");
   background-position: center;
@@ -136,11 +136,11 @@ html, body{
 }
 
 .content_container {
-  min-height:900px;
+  min-height:1300px;
 }
 .content_container > .content {
   display: flex;
-  width: 90%;
+  width: 1280px;
   margin: 100px auto;
 }
 .content_container .text_container {
@@ -148,9 +148,25 @@ html, body{
   margin: 0 auto;
 }
 
+.content_container .text_container  h1 {
+  font-weight: 600;
+}
+
+.content_container .text_container  .article {
+  font-size: 23px;
+  font-weight: 550;
+}
+
+.content_container .text_container .line {
+  width: 650px;
+  background-color: grey;
+  margin-bottom: 40px;
+  height: 1px;
+}
+
 .content_container .banner_container {
   min-height: 600px;
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -160,9 +176,42 @@ html, body{
 }
 
 .banner_container > .text_box {
+  width:100%;
+  padding: 20px;
   border:1px solid black;
-  height: 50%;
+  /* height: 50%; */
 }
+
+.banner_container > .text_box > .title {
+  color: #000080;
+  font-weight: 600;
+}
+
+.banner_container > .text_box > .instrument {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 550;
+  word-wrap:break-word;
+}
+
+.banner_container > .text_box > .notice {
+  color: #000080;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.banner_container > .text_box > .explanation {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.banner_container > .text_box > form {
+  margin-top: 23px;
+}
+
+
+
 
 footer {
   background-color: #17171C;
@@ -251,16 +300,22 @@ footer .footer_container span {
 
   .content_container > .content {
     flex-direction: column;
+    width: 90%;
   }
 
   .content_container .text_container {
-    width: 80%;
+    width: 90%;
+    
+  }
+
+  .content_container .text_container .line {
+    width: 360px;
     
   }
   
   .content_container .banner_container {
     margin-top: 40px;
-    width: 80%;
+    width: 90%;
     height: 600px;
   }
 

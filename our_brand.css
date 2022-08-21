@@ -130,21 +130,74 @@ html, body{
 }
 
 .content_container {
-  height: 150vh;
-  width: 80%;
-  margin: 0 auto;
+  
+  width: 1280px;
+  margin: 60px auto;
   display: flex;
 
 }
 
 .content_container > .text_area {
   width: 70%;
-  background-color: red;
+  text-align: center;
+}
+
+.content_container > .text_area > .about {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.content_container > .text_area > .plus {
+  
+  font-size: 25px;
+}
+
+
+.content_container > .text_area > .inmuu {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.content_container > .text_area > .article1 {
+  margin-top: 72px;
+  font-size: 22px;
+  
+}
+
+.content_container > .text_area > .article2 {
+  margin: 50px 0;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.content_container > .text_area > .article3 {
+  
+  font-size: 22px;
+  
+}
+
+.content_container > .text_area > .link-set {
+  
+  margin-top: 200px;
+}
+
+.content_container > .text_area > .link-set > a > i {
+  padding: 0 32px;
+  font-size: 50px;
+  color: black;
 }
 
 .content_container > .photo_area {
   width: 30%;
-  background-color: blue;
+  display: grid;
+  grid-template-columns: 300px;
+  /* 높이는 네가 알아서 해  */
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.content_container > .photo_area > img{
+  width: 80%;
+  margin: 0 auto;
 }
 
 footer {
@@ -232,7 +285,27 @@ footer .footer_container span {
     display: block;
   }
 
- 
+  .content_container {
+    width: 90%;
+    flex-direction: column;
+  }
+  
+  .content_container > .text_area {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  
+  .content_container > .text_area > .link-set {
+  
+    margin-top: 100px;
+  }
+
+  .content_container > .photo_area {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }  
+  
+  
 
 
   

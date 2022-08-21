@@ -102,7 +102,7 @@ html, body{
 .intro {
   width: 100%;
   height: 150px;
-  padding: 250px 0;
+  padding: 170px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
   url("img/KakaoTalk_20211106_135901402.jpg");
   background-position: center;
@@ -136,13 +136,24 @@ html, body{
 }
 
 .content_container {
-  width: 80%;
+  width: 1280px;
   margin: 100px auto;
   min-height: 800px;
 }
 
+.content_container > .title > h1{
+  font-weight: 600;
+}
+
+.content_container > .title_line {
+  width: 280px;
+  height: 2px;
+  background-color: #17171C;
+}
+
 .content_container > .news_box {
  min-height:350px;
+ height: 350px;
  border: 1px solid black;
  margin-top: 40px;
  display: flex;
@@ -156,12 +167,41 @@ html, body{
  .content_container > .news_box > .text_area{
   width:60%;
   padding: 20px;
+  
+ }
+ .content_container > .news_box > .text_area > .text_title{
+  font-weight: 600;
  }
 
  .content_container > .news_box > .text_area > .text_detail{
-  padding: 10px 0;
+  padding: 0 0;
   font-size: 23px;
+  color: #808080;
+  font-weight: 550;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+
+  
+  /* white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden; */
  }
+
+ .content_container > .news_box > .text_area > a >.button{
+  text-align: right;
+  font-size: 25px;
+  color: #000080;
+  font-weight: 600;
+  padding: 12px
+ }
+
 .content_container > .news_box_1 {
  
  }
@@ -256,8 +296,13 @@ footer .footer_container span {
     display: block;
   }
 
+  .content_container {
+    width: 90%;
+  }
+
   .content_container > .news_box {
     flex-direction: column;
+    height: 570px;
   }
 
   .content_container > .news_box_2 {
@@ -272,6 +317,10 @@ footer .footer_container span {
   .content_container > .news_box > .text_area{
   width:100%;
   }
+
+  .content_container > .news_box > .text_area > .text_detail{
+    -webkit-line-clamp: 4;
+   }
 
 
 
