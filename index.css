@@ -151,7 +151,7 @@ html, body{
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: relative;
   top: 0;
   transition: 0.4s;
@@ -200,13 +200,29 @@ html, body{
 
 }
 
-.text-area {
+.video-container > .text-area {
   color: #fff;
-  font-size: 35px;
   
 }
 
-.video-area {
+.video-container > .text-area > .title {
+  display: flex;
+  align-items: center;
+}
+
+.video-container > .text-area > .title > .in {
+  font-size: 110px;
+}
+
+.video-container > .text-area > .title > .muuterview {
+  font-size: 35px;
+}
+
+.video-container > .text-area > .explanation {
+  font-size: 35px;
+}
+
+.video-container > .video-area {
   display: flex;
   align-items: center;
 
