@@ -689,6 +689,9 @@ footer .footer_container span {
   .text-area {
     width: 80%;
     margin-bottom: 50px;
+  }
+
+  .video-container > .text-area > .explanation {
     font-size: 30px;
   }
   
