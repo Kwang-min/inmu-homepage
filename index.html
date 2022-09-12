@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>인생뮤직</title>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
   <script src="https://kit.fontawesome.com/de31adcbb8.js" crossorigin="anonymous"></script>
   <script src="toggle.js" defer></script> <!-- 네비게이션 바 토글(반응형 시에) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="navbar__logo">
-        <a href="">인생뮤직</a>
+      <a href="/">인생뮤직</a>
     </div>
     <ul class="navbar__menu ">
-        <li class="navbar__menu_inmuu"><a>INMUU <br>STORY</a>
-          <ul class="navbar__sub_menu navbar__sub_menu_inmuu">
-            <li><a href="">인뮤 ABOUT</a></li>
-            <li><a href="">인뮤 HISTORY</a></li>
-            <li><a href="">인뮤 NEWS</a></li>
-            <li><a href="">인뮤 &</a></li>
-          </ul>
-        </li>
-        <li class="navbar__menu_contents"><a>OUR <br>CONTENTS</a>
-          <ul class="navbar__sub_menu navbar__sub_menu_contents">
-            <li><a href="">인생 퇴근송</a></li>
-            <li><a href="">인생 VOICE  &nbsp; &nbsp; &nbsp;</a></li>
-            <li><a href="">인뮤 LIVE</a></li>
-            <li><a href="">인뮤 노래방</a></li>
-            <li><a href="">합주 데이</a></li>
-          </ul>
-        </li>
-        <li><a >지점안내</a></li>
-        <li class="navbar__menu_afil"><a >FRANCHISE <br> 창업 안내</a>
-          <ul class="navbar__sub_menu navbar__sub_menu_afil">
-            <li><a href="">인생뮤직 브랜드</a></li>
-            <li><a href="">창업 절차</a></li>
-            <li><a href="">창업 비용 및 수익</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">창업 문의</a></li>
-          </ul>
-        </li>
+      <li class="navbar__menu_story"><a>INMUU <br>STORY</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_story">
+          <li><a href="inmuu_story/our_brand.html">OUR BRAND</a></li>
+          <li><a href="inmuu_story/our_place.html">OUR PLACE</a></li>
+        </ul>
+      </li>
+      <li class="navbar__menu_contents"><a>OUR <br>CONTENTS</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_contents">
+          <li><a href="our_contents/toegeun_song.html">인생 퇴근송</a></li>
+          <li><a href="our_contents/band_day.html">밴드 데이 &nbsp; &nbsp; &nbsp;</a></li>
+          <li><a href="our_contents/inmuu_live.html">인뮤 라이브</a></li>
+          <li><a href="our_contents/vlog.html">V-LOG</a></li>
+          <li><a href="our_contents/inmuu_interview.html">인뮤 인터뷰</a></li>
+        </ul>
+      </li>
+      <li class="navbar__menu_news"><a>NEWS</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_news">
+          <li><a href="inmuu_news/inmuu_news.html">INMUU <br> NEWS</a></li>
+        </ul>
+      </li>
+      <li class="navbar__menu_branch"><a>MAP <br> 지점안내</a>
+
+      </li>
+      <li class="navbar__menu_franchise"><a>FRANCHISE <br> 가맹 안내</a>
+        <ul class="navbar__sub_menu navbar__sub_menu_franchise">
+          <li><a href="">인생뮤직 브랜드</a></li>
+          <li><a href="">창업 절차</a></li>
+          <li><a href="">창업 비용 및 수익</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">창업 문의</a></li>
+        </ul>
+      </li>
     </ul>
     <ul class="navbar__icons">
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
-        
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-facebook-f"></i></li>
+
     </ul>
     <a href="#" class="navbar__toggleBtn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </a>
-</nav>
+  </nav>
 
 
   <div class="main_carousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/최종사진/음악이 (2)/2.png" class="d-block w-100" alt="...">
-          
+
         </div>
         <div class="carousel-item">
           <img src="img/최종사진/음악이 (2)/4.png" class="d-block w-100" alt="...">
@@ -95,7 +106,7 @@
         <span class="visually-hidden">Next</span>
       </button> -->
     </div>
-    
+
   </div>
   <!-- <div class="vlog_review_container">
     <div class="vlog_container">
@@ -193,7 +204,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="banner band_day">
       <img src="img/최종사진/3단 카드/밴드데이 카드.png" alt="">
       <div class="text_container">
@@ -205,7 +216,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="banner free_class">
       <img src="img/최종사진/3단 카드/무료체험레슨 카드.png" alt="">
       <div class="text_container">
@@ -231,7 +242,7 @@
             TERVIEW
           </div>
         </div>
-        
+
       </div>
       <div class="explanation">
         인뮤 가족들이 전하는 <br>
@@ -241,15 +252,14 @@
       </div>
     </div>
     <div class="video-area">
-      <iframe src="https://www.youtube.com/embed/mhOiosewZYs" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/mhOiosewZYs" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
-   
+
   </div>
-  
-  
+
+
   <div class="title-for-swiper-community">INMUU <br> COMMNUNITY</div>
   <div class="swiper-container swiper-for-community">
     <div class="swiper-wrapper">
@@ -270,60 +280,66 @@
     <!-- 페이징 -->
     <div class="swiper-pagination"></div>
   </div>
-  
+
   <div class="title-for-swiper-place">OUR PLACE</div>
   <div class="swiper-container swiper-for-place">
     <div class="swiper-wrapper">
-      
+
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%9D%B8%EC%B2%9C/place/1884737083?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%9D%B8%EC%B2%9C/place/1884737083?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/1.png">
         </a>
       </div>
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%B2%AD%EC%A3%BC/place/1896367875?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%B2%AD%EC%A3%BC/place/1896367875?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/2.png">
         </a>
       </div>
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%B2%9C%EC%95%88/place/1959770845?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%B2%9C%EC%95%88/place/1959770845?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/3.png">
         </a>
       </div>
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%88%98%EC%9B%90/place/1575009978?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%88%98%EC%9B%90/place/1575009978?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/4.png">
         </a>
       </div>
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%95%88%EC%96%91/place/1646394009?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EC%95%88%EC%96%91/place/1646394009?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&placeSearchOption=entry=pll%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/5.png">
         </a>
       </div>
       <div class="swiper-slide">
-        <a href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EB%8F%99%ED%83%84/place/1559342048?placePath=%3Fentry=pll%26from=nx%26fromNxList=true">
+        <a
+          href="https://map.naver.com/v5/search/%EC%9D%B8%EC%83%9D%EB%AE%A4%EC%A7%81%EB%8F%99%ED%83%84/place/1559342048?placePath=%3Fentry=pll%26from=nx%26fromNxList=true">
           <img src="img/최종사진/아워 플레이스/6.png">
         </a>
       </div>
-      
+
     </div>
-  
+
     <!-- 네비게이션 -->
     <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
     <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
-  
+
     <!-- 페이징 -->
     <div class="swiper-pagination"></div>
   </div>
-  
-  
+
+
   <div class="modal">
-		<button>&times;</button>
-		<div class="modalBox">
-			<img src="" alt="">
-			<p></p>
-		</div>
-	</div>
+    <button>&times;</button>
+    <div class="modalBox">
+      <img src="" alt="">
+      <p></p>
+    </div>
+  </div>
 
   <footer>
     <div class="footer_container">
@@ -342,16 +358,16 @@
   <!-- for carousel start -->
   <script>
     // function moveurl(url) {     location.href = url;}
-    
-    
+
+
     var counter = 1;
-    setInterval(function() {
-      document.getElementById('radio' + counter).checked = true; 
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
       counter++;
-      if(counter > 4) {
+      if (counter > 4) {
         counter = 1;
       }
-    },5000);
+    }, 5000);
   </script>
   <!-- for carousel end-->
 
@@ -359,117 +375,117 @@
   <script>
     new Swiper('.swiper-for-community', {
 
-      slidesPerView : 4, // 동시에 보여줄 슬라이드 갯수
-      spaceBetween : 10, // 슬라이드간 간격
-      slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+      slidesPerView: 4, // 동시에 보여줄 슬라이드 갯수
+      spaceBetween: 10, // 슬라이드간 간격
+      slidesPerGroup: 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
 
       // 그룹수가 맞지 않을 경우 빈칸으로 메우기
       // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
-      loopFillGroupWithBlank : true,
+      loopFillGroupWithBlank: true,
 
-      loop : true, // 무한 반복
+      loop: true, // 무한 반복
 
       // pagination : { 
       //   el : '.swiper-pagination',
       //   clickable : true, 
       // },
-      autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
-        delay : 4000,   // 시간 설정
-        disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+      autoplay: {  // 자동 슬라이드 설정 , 비 활성화 시 false
+        delay: 4000,   // 시간 설정
+        disableOnInteraction: false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
       },
-      breakpoints : { // 반응형 설정이 가능 width값으로 조정
-        768 : {
-          slidesPerView : 1,
-          spaceBetween : 10, // 슬라이드간 간격
-          slidesPerGroup : 1, 
+      breakpoints: { // 반응형 설정이 가능 width값으로 조정
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 10, // 슬라이드간 간격
+          slidesPerGroup: 1,
+        },
       },
-},
     });
 
     new Swiper('.swiper-for-place', {
 
-      slidesPerView : 4, // 동시에 보여줄 슬라이드 갯수
-      spaceBetween : 10, // 슬라이드간 간격
-      slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+      slidesPerView: 4, // 동시에 보여줄 슬라이드 갯수
+      spaceBetween: 10, // 슬라이드간 간격
+      slidesPerGroup: 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
 
       // 그룹수가 맞지 않을 경우 빈칸으로 메우기
       // 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
-      loopFillGroupWithBlank : true,
+      loopFillGroupWithBlank: true,
 
-      loop : true, // 무한 반복
+      loop: true, // 무한 반복
 
       // pagination : { 
       //   el : '.swiper-pagination',
       //   clickable : true, 
       // },
-      autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
-        delay : 4000,   // 시간 설정
-        disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+      autoplay: {  // 자동 슬라이드 설정 , 비 활성화 시 false
+        delay: 4000,   // 시간 설정
+        disableOnInteraction: false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
       },
-      navigation : { // 네비게이션
-        nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-        prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+      navigation: { // 네비게이션
+        nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+        prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
       },
-      breakpoints : { // 반응형 설정이 가능 width값으로 조정
-        768 : {
-          slidesPerView : 1,
-          spaceBetween : 10, // 슬라이드간 간격
-          slidesPerGroup : 1, 
+      breakpoints: { // 반응형 설정이 가능 width값으로 조정
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 10, // 슬라이드간 간격
+          slidesPerGroup: 1,
+        },
       },
-      },
-      });
+    });
   </script>
   <!-- for swiperjs end-->
 
   <!-- for modal start-->
-    <script>
-      $(function(){
-        // 	이미지 클릭시 해당 이미지 모달
-        $(".swiper-for-community .swiper-slide").click(function(){
-          $(".modal").show();
-          // 해당 이미지 가겨오기
-          var imgSrc = $(this).children("img").attr("src");
-          var imgAlt = $(this).children("img").attr("alt");
-          $(".modalBox img").attr("src", imgSrc);
-          $(".modalBox img").attr("alt", imgAlt);
-          
-          // 해당 이미지 텍스트 가져오기
-          var imgTit =  $(this).children("p").text();
-          $(".modalBox p").text(imgTit);
-          
+  <script>
+    $(function () {
+      // 	이미지 클릭시 해당 이미지 모달
+      $(".swiper-for-community .swiper-slide").click(function () {
+        $(".modal").show();
+        // 해당 이미지 가겨오기
+        var imgSrc = $(this).children("img").attr("src");
+        var imgAlt = $(this).children("img").attr("alt");
+        $(".modalBox img").attr("src", imgSrc);
+        $(".modalBox img").attr("alt", imgAlt);
+
+        // 해당 이미지 텍스트 가져오기
+        var imgTit = $(this).children("p").text();
+        $(".modalBox p").text(imgTit);
+
         // 해당 이미지에 alt값을 가져와 제목으로
-          //$(".modalBox p").text(imgAlt);
-        });
-        
-        //.modal안에 button을 클릭하면 .modal닫기
-        $(".modal button").click(function(){
-          $(".modal").hide();
-        });
-        
-        //.modal밖에 클릭시 닫힘
-        $(".modal").click(function (e) {
-          if (e.target.className != "modal") {
-            return false;
-          } else {
-            $(".modal").hide();
-          }
-        });
+        //$(".modalBox p").text(imgAlt);
       });
-    </script>
+
+      //.modal안에 button을 클릭하면 .modal닫기
+      $(".modal button").click(function () {
+        $(".modal").hide();
+      });
+
+      //.modal밖에 클릭시 닫힘
+      $(".modal").click(function (e) {
+        if (e.target.className != "modal") {
+          return false;
+        } else {
+          $(".modal").hide();
+        }
+      });
+    });
+  </script>
   <!--for modal end-->
 
   <!-- Channel Plugin Scripts -->
   <script>
-    (function() {
+    (function () {
       var w = window;
       if (w.ChannelIO) {
-        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
       }
-      var ch = function() {
+      var ch = function () {
         ch.c(arguments);
       };
       ch.q = [];
-      ch.c = function(args) {
+      ch.c = function (args) {
         ch.q.push(args);
       };
       w.ChannelIO = ch;
@@ -502,4 +518,5 @@
   <!-- End Channel Plugin -->
 
 </body>
+
 </html>

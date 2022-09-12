@@ -10,6 +10,7 @@
 html, body{
   width: 100%;
   height: 100%;
+  background-color: #fff;
 }
 
 .navbar{
@@ -104,114 +105,90 @@ html, body{
   height: 150px;
   padding: 170px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/KakaoTalk_20211106_135901402.jpg");
+  url("/inmu-homepage/img/KakaoTalk_20211106_135901402.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
-  align-items: center;
+  justify-content: end;
+  align-items: flex-start;
   /* background-color: rgba(0, 0, 0, 0.5); */
   /* background-color: #000;
   opacity:0.7;  */
 }
 
-.intro h1 {
+.intro .text {
+  
+  font-size: 45px;
   color: #fff;
+}
+
+
+.content_container {
+  
+  width: 1280px;
+  min-height:900px;
+  margin: 120px auto;
+}
+
+.video-container {
+  /* padding: 100px 0;
+  margin: 0 auto 80px; */
+  display: flex;
+	justify-content:space-between;
+  background-size: cover;
+
+}
+
+.video-container > .text-area {
   
 }
 
-.intro .text {
-  width: 45%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.intro .text h1{
-  font-size: 45px;
-}
-
-.intro .text p {
-  color: #ffffff;
-  font-size: 25px;
-  margin-top: 30px;
-}
-
-.content_container {
-  min-height:1300px;
-}
-.content_container > .content {
+.video-container > .text-area > .title {
   display: flex;
-  width: 1280px;
-  margin: 100px auto;
-}
-.content_container .text_container {
-  width: 65%;
-  margin: 0 auto;
+  align-items: center;
 }
 
-.content_container .text_container  h1 {
+.video-container > .text-area > .title > .in {
+  font-size: 110px;
   font-weight: 600;
 }
 
-.content_container .text_container  .article {
-  font-size: 23px;
-  font-weight: 550;
-}
-
-.content_container .text_container .line {
-  width: 650px;
-  background-color: grey;
-  margin-bottom: 40px;
-  height: 1px;
-}
-
-.content_container .banner_container {
-  min-height: 600px;
-  width: 32%;
-  margin: 0 auto;
-}
-
-.banner_container > img {
-  height: 50%;
-  width: 100%;
-}
-
-.banner_container > .text_box {
-  width:100%;
-  padding: 20px;
-  border:1px solid black;
-  /* height: 50%; */
-}
-
-.banner_container > .text_box > .title {
-  color: #000080;
+.video-container > .text-area > .title > .muuterview {
+  font-size: 35px;
   font-weight: 600;
 }
 
-.banner_container > .text_box > .instrument {
-  color: #808080;
-  font-size: 20px;
-  font-weight: 550;
-  word-wrap:break-word;
-}
-
-.banner_container > .text_box > .notice {
-  color: #000080;
-  font-size: 30px;
+.video-container > .text-area > .explanation {
+  font-size: 35px;
   font-weight: 550;
 }
 
-.banner_container > .text_box > .explanation {
-  color: #808080;
-  font-size: 20px;
+.video-container > .video-area {
+  display: flex;
+  align-items: center;
+
+}
+
+
+iframe {
+  
+  width: 700px;
+  height: 360px;
+ 
+}
+
+.line {
+  border: 1px solid black;
+  margin: 100px 0;
+}
+
+.ps_container h1{
+  font-weight: 600;
+}
+
+.ps_container p{
   font-weight: 550;
 }
-
-.banner_container > .text_box > form {
-  margin-top: 23px;
-}
-
-
-
 
 footer {
   background-color: #17171C;
@@ -298,29 +275,31 @@ footer .footer_container span {
     display: block;
   }
 
-  .content_container > .content {
-    flex-direction: column;
-    width: 90%;
+  .intro h1 {
+    top: 100px;
+    left: 60%;
   }
 
-  .content_container .text_container {
-    width: 90%;
-    
-  }
-
-  .content_container .text_container .line {
-    width: 360px;
-    
+  .content_container {
+  
+    width:90%;
+    margin: 0 auto;
   }
   
-  .content_container .banner_container {
-    margin-top: 40px;
-    width: 90%;
-    height: 600px;
+
+  .video-container {
+    
+    flex-direction: column;
+  
   }
 
+  .video-container > .text-area {
+    margin-bottom: 60px;
+  }
 
-
+  .ps_container{
+    margin-bottom: 70px;
+  }
   
 }
 

@@ -3,13 +3,15 @@ const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".navbar__menu");
 const icons = document.querySelector(".navbar__icons");
 
-const inmuuMenuButton = document.querySelector(".navbar__menu_inmuu");
+const storyMenuButton = document.querySelector(".navbar__menu_story");
 const contentsMenuButton = document.querySelector(".navbar__menu_contents");
-const afilMenuButton = document.querySelector(".navbar__menu_afil");
+const newsMenuButton = document.querySelector(".navbar__menu_news");
+const franchiseMenuButton = document.querySelector(".navbar__menu_franchise");
 
-const inmuuSubmenu = document.querySelector(".navbar__sub_menu_inmuu");
+const storySubmenu = document.querySelector(".navbar__sub_menu_story");
 const contentsSubmenu = document.querySelector(".navbar__sub_menu_contents");
-const afilSubmenu = document.querySelector(".navbar__sub_menu_afil");
+const newsSubmenu = document.querySelector(".navbar__sub_menu_news");
+const franchiseSubmenu = document.querySelector(".navbar__sub_menu_franchise");
 
 // 모바일에서 햄버거 버튼 눌리면 메뉴 나타나는 토글
 toggleBtn.addEventListener("click", () => {
@@ -18,9 +20,9 @@ toggleBtn.addEventListener("click", () => {
     icons.classList.toggle('active')
 })
 
-// 모바일에서 인뮤 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
-inmuuMenuButton.addEventListener("click",() => {
-    inmuuSubmenu.classList.toggle('active');
+// 모바일에서 story 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
+storyMenuButton.addEventListener("click",() => {
+    storySubmenu.classList.toggle('active');
 })
 
 // 모바일에서 인뮤컨텐츠 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
@@ -28,7 +30,12 @@ contentsMenuButton.addEventListener("click",() => {
     contentsSubmenu.classList.toggle('active');
 })
 
+// 모바일에서 뉴스 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
+newsMenuButton.addEventListener("click",() => {
+    newsSubmenu.classList.toggle('active');
+})
+
 // 모바일에서 창업 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
-afilMenuButton.addEventListener("click",() => {
-    afilSubmenu.classList.toggle('active');
+franchiseMenuButton.addEventListener("click",() => {
+    franchiseSubmenu.classList.toggle('active');
 })

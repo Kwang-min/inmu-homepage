@@ -104,7 +104,7 @@ html, body{
   height: 150px;
   padding: 170px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/KakaoTalk_20211106_135901402.jpg");
+  url("/inmu-homepage/img/KakaoTalk_20211106_135901402.jpg");
   background-position: center;
   background-size: cover;
   display: flex;

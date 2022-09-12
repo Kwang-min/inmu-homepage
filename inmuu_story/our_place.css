@@ -148,6 +148,7 @@ html, body{
   color: #fff;
   font-size: 50px;
   font-weight: 600;
+  padding: 32px;
 }
 
 .content_container > .part1 > .text-area > .width-line  {
@@ -155,8 +156,8 @@ html, body{
   width: 200px;
   height: 3px;
   animation: fadein 1s;
-  position: relative;
-  
+  position: absolute;
+  right: 70%;
 }
 
 .content_container > .part1 > .text-area > .vertical-line  {
@@ -164,8 +165,8 @@ html, body{
   width: 3px;
   height: 320px;
   animation: fadein 2s;
-  position: relative;
-  top: 190px;
+  position: absolute;
+  top: 600px;
 }
 
 

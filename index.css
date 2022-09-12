@@ -560,17 +560,23 @@ footer .footer_container span {
       display:flex;
   }
 
+  .navbar__sub_menu_story.active {
+    display: block;
+  }
+
   .navbar__sub_menu_contents.active {
     display: block;
   }
 
-  .navbar__sub_menu_afil.active {
+  .navbar__sub_menu_news.active {
     display: block;
   }
 
-  .navbar__sub_menu_inmuu.active {
+  .navbar__sub_menu_franchise.active {
     display: block;
   }
+
+
 
 
 
