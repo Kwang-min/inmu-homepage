@@ -210,6 +210,30 @@ html, body{
   margin-top: 23px;
 }
 
+select {
+  width: 370px; 
+  padding: 5px 5px; 
+  background-color:#e9ecef;
+  /* font-weight: 550; */
+  font-size: 18px;
+  color: #343a40;
+  border: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* border: 1px solid #999;
+  font-family: inherit;  
+  background: url('arrow.jpg') no-repeat 95% 50%; 
+  border-radius: 0px; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+select::-ms-expand {    
+  display: none;
+}
 
 
 
@@ -304,7 +328,7 @@ footer .footer_container span {
   }
 
   .content_container .text_container {
-    width: 90%;
+    width: 100%;
     
   }
 
@@ -315,8 +339,12 @@ footer .footer_container span {
   
   .content_container .banner_container {
     margin-top: 40px;
-    width: 90%;
-    height: 600px;
+    width: 100%;
+    
+  }
+
+  select {
+    width: 330px;
   }
 
 
