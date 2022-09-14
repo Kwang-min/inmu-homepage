@@ -68,6 +68,14 @@ html, body{
   z-index: 1;
 }
 
+.navbar__sub_menu_contents {
+  padding: 12px 30px;
+}
+
+.navbar__sub_menu_news {
+  padding: 12px 30px;
+}
+
 .navbar__sub_menu > li > a {
   color: white;
   text-decoration-line : none;
