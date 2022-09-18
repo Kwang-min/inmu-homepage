@@ -151,7 +151,15 @@ html, body{
   margin: 120px auto;
 }
 
-.content_container > .part1 > .text-area  {
+.part1 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.part1 > .text-area  {
+  
+  position:relative;
   width: 50%;
   color: #fff;
   font-size: 50px;
@@ -159,68 +167,162 @@ html, body{
   padding: 32px;
 }
 
-.content_container > .part1 > .text-area > .width-line  {
+.part1 > .text-area > .width-line  {
+  position:absolute;
+  left: 0px;
   background-color: #fff;
   width: 200px;
   height: 3px;
   animation: fadein 1s;
   position: absolute;
-  right: 70%;
+  
 }
 
-.content_container > .part1 > .text-area > .vertical-line  {
+.part1 > .text-area > .vertical-line  {
+  position:absolute;
+  top: 0px;
   background-color: #fff;
   width: 3px;
-  height: 320px;
+  height: 330px;
   animation: fadein 2s;
   position: absolute;
-  top: 600px;
+ 
 }
 
 
-.content_container > .part1 > .text-area > h2 {
+.part1 > .text-area > h2 {
+  padding: 24px;
   color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+}
+.part1 > .photo-area  {
+  width: 50%;
+  display: flex;
+  justify-content:center;
+}
+
+.part1 > .photo-area > img  {
+  width: 350px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.part2 {
+  width: 90%;
+  max-width: 1280px;
+  margin: 200px auto;  
+  display: grid;
+  /* 가로크기? */
+  grid-template-columns: repeat(3, 1fr);
+  /* 높이는 네가 알아서 해  */
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.part2 > .banner {
+  background: black;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  position: relative;
+  top: 0;
+  transition: 0.4s;
+}
+
+.part2 > .banner:hover {
+  top: -2px;
+}
+
+
+
+.part2 > .banner > .text_container {
+  height: 45%;
+}
+
+.part2 > .banner > .text_container > .title {
+  padding: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+}
+
+.part2 > .banner > .text_container > img {
+  width: 100%;
+  margin: 50px 0;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.part2 > .banner > .text_container > .text {
+  padding: 20px 20px 70px;
+  color: grey;
+  font-size: 25px;
+  text-align: center;
+}
+
+.part3 {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.part3 > .text-container {
+  width: 80%;
+  margin: 0 auto;
+  position:relative;
+  color: #fff;
+  padding: 32px;
+}
+
+.part3 > .text-container > .width-line  {
+  position:absolute;
+  left: -60px;
+  background-color: #fff;
+  width: 560px;
+  height: 3px;
+  animation: fadein 1s;
+  position: absolute;
+  
+}
+
+.part3 > .text-container > .vertical-line  {
+  position:absolute;
+  top: 0px;
+  background-color: #fff;
+  width: 3px;
+  height: 340px;
+  animation: fadein 2s;
+  position: absolute;
+ 
+}
+
+
+.part3 > .text-container > h2 {
+  padding: 32px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.part3 > .text-container > h1 {
+  padding: 32px;
   font-size: 50px;
   font-weight: 600;
 }
 
-.content_container > .part1 > .photo-area  {
-  width: 50%;
-}
 
 
 
-.greyRule {
-  margin-top: 300px;
-  margin-left: 100px;
-  background: black;
-  width: 450px;
-  height: 19px;
-  position: absolute;
-  top:700px;
-  animation: fadein 2s;
-  }
-.greyRule:hover {
-  width: 550px;
-  background-color: red;
-  
-  /* transition: 2s; */
-}
 
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-.table {
-  width: 500px;
-  height: 500px;
-  border-left:1px solid black;
-  margin-left: 120px;
-  margin-top: 300px;
-  padding-top: 50px;
-  
-}
 
 footer {
   background-color: #17171C;
@@ -307,8 +409,90 @@ footer .footer_container span {
     display: block;
   }
 
- 
-
+  .content_container {
   
+    width: 100%;
+  }
+ 
+  .part1 {
+    flex-direction: column;
+    width: 90%;
+  
+  }
+
+  .part1 > .text-area  {
+  
+    position:relative;
+    width: 100%;
+    color: #fff;
+    padding: 32px;
+  }
+  
+  .part1 > .text-area > .width-line  {
+    left: 0px;
+    width: 200px;
+    
+  }
+  
+  .part1 > .text-area > .vertical-line  {
+    width: 3px;
+    height: 230px;
+   
+  }
+  
+  
+  .part1 > .text-area > h2 {
+    padding: 24px;
+    font-size: 30px;
+  }
+  .part1 > .photo-area  {
+    width: 100%;
+
+    margin-top: 40px;
+  }
+  
+  .part1 > .photo-area > img  {
+    width: 300px;
+  }
+  
+  .part2 {
+    grid-template-columns: 1fr;
+
+  }
+
+  .part3 {
+    width: 90%;
+  }
+  
+  .part3 > .text-container {
+    width: 100%;
+  }
+  
+  .part3 > .text-container > .width-line  {
+    left: -20px;
+    width: 300px;
+    
+  }
+  
+  .part3 > .text-container > .vertical-line  {
+    top: 0px;
+    width: 3px;
+    height: 340px;
+   
+  }
+  
+  
+  .part3 > .text-container > h2 {
+    padding: 22px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+  
+  .part3 > .text-container > h1 {
+    padding: 22px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
 }
 

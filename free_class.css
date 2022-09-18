@@ -226,9 +226,9 @@ select {
   font-size: 18px;
   color: #343a40;
   border: none;
-  -webkit-appearance: none; 
+  /* -webkit-appearance: none; 
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
   
   /* border: 1px solid #999;
   font-family: inherit;  
@@ -240,7 +240,7 @@ select {
 }
 
 select::-ms-expand {    
-  display: none;
+  /* display: none; */
 }
 
 
