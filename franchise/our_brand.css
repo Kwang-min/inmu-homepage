@@ -143,9 +143,113 @@ html, body{
   min-height: 700px;
 }
 
+
+.button-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.button-area .target {
+  background-color: #FF1493;
+  /* color: white; */
+}
+.button-area .button {
+  border: solid 2px #e4e5ed;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.button-area .button:hover {
+  background-color: #FF1493;
+  color: #fff;
+}
+
+.button-area .button .text {
+  width: 60%;
+  margin: 12px auto;
+  color: #666;
+}
+
+
 .content_container > img {
   width: 100%;
 }
+
+
+#Accordion_wrap {
+  padding: 50px 0 100px;
+}
+
+#Accordion_wrap .title {
+  text-align: center;
+  font-size:40px;
+  font-weight: 600;
+  margin: 30px auto 30px;
+}
+
+.line{
+  width: 50px;
+  height: 7px;
+  margin: 60px auto 60px;
+  background-color: blue;
+}
+
+.que:first-child{
+  border-top: 1px solid black;
+}
+
+.que{
+position: relative;
+padding: 23px 30px;
+cursor: pointer;
+font-size: 1.1rem;
+border-bottom: 1px solid #dddddd;
+text-align: left;
+}
+
+.que::before{
+display: inline-block;
+content: 'Q.';
+font-size: 1.4rem;
+color: blue;
+margin-right: 5px;
+}
+
+.que.on>span{
+font-weight: bold;
+color: blue; 
+}
+
+.anw {
+display: none;
+overflow: hidden;
+font-size: 1.1rem;
+background-color: #f4f4f2;
+padding: 28px 30px;
+text-align: left;
+}
+
+.anw::before {
+display: inline-block;
+content: 'A.';
+font-size: 1.3rem;
+font-weight: bold;
+color: #666;
+margin-right: 5px;
+}
+
+.goupbtn {
+  top: 80%;
+  left: 94.9%;
+  width: 60px;
+  height: 60px;
+  border-radius: 80%;
+  background-color: #ffffff;
+  border: black 3px solid;
+  position: fixed;
+  z-index: 2;
+}
+
 
 footer {
   background-color: #17171C;
@@ -237,9 +341,29 @@ footer .footer_container span {
     
   }
 
+  .button-area {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .button-area .button {
+    height: 40px;
+  }
+
+  .button-area .button .text {
+    margin: 8px auto;
+    width: 80%;
+  }
+
   .content_container > img {
     width: 100%;
     
+  }
+
+  .goupbtn {
+    top: 80%;
+    left: 80%;
   }
   
 }
