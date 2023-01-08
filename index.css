@@ -21,6 +21,7 @@ html, body{
   right: 0;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -146,6 +147,7 @@ html, body{
   display: grid;
   /* 가로크기? */
   grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: minmax(300px, auto); */
   /* 높이는 네가 알아서 해  */
   grid-template-rows: auto;
   grid-gap: 20px;
@@ -157,7 +159,6 @@ html, body{
   color: #444;
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
   display: flex;
-  min-height: 100%;
   flex-direction: column;
   /* justify-content: space-between; */
   position: relative;
@@ -176,6 +177,7 @@ html, body{
 
 .banners > .banner > .text_container {
   border:1px solid #fff;
+  /* 배너 높이를 균일하게 하기 위해 높이를 지정했음 */
   height: 45%;
 }
 
@@ -191,9 +193,18 @@ html, body{
   padding: 20px 20px 70px;
   color: white;
   font-size: 25px;
+  font-weight: 550;
 }
 
 /* 프리클래스만 배경 색 흰색으로 */
+
+.banners .free_class .text_container{
+  background-color: #fff;
+}
+
+.banners .free_class .text_container .title, .banners .free_class .text_container .text{
+  color: black;
+}
 
 
 .video-container {
@@ -237,7 +248,7 @@ html, body{
 }
 
 
-iframe {
+.video-container iframe {
   
   width: 500px;
   height: 300px;
@@ -532,8 +543,8 @@ footer .footer_container span {
   font-family: 'Jua';
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+  
   .navbar {
     
     flex-direction: column;
@@ -555,6 +566,13 @@ footer .footer_container span {
       width:100%;
       text-align: center;
   }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
   .navbar__sub_menu {
     opacity: 1;
     visibility: visible;
@@ -578,10 +596,17 @@ footer .footer_container span {
     min-height:100vh;
   }
 
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
   }
+
 
   .navbar__sub_menu_story.active {
     display: block;
@@ -599,11 +624,59 @@ footer .footer_container span {
     display: block;
   }
 
+  .banners > .banner > .text_container {
+    height: 50%;
+  }
+
+  .banners > .banner > .text_container > .title {
+    font-size: 30px;
+  }
+  
+  
+  .video-container {
+    width:100%;
+    padding: 50px 0;
+    
+  }
+
+  .video-container .text-area {
+    width: 80%;
+    padding-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  .video-container > .text-area > .explanation {
+    font-size: 30px;
+  }
+  
+  .video-area {
+    width: 100%;
+  
+  }
+
+  .video-container iframe {
+  
+    width: 400px;
+    height: 250px;
+   
+  }
+  
+  
+  .swiper-container {
+    width: 100%;
+
+  }
+
+  .swiper-slide img {
+    height: 280px;
+  }
+
+}
 
 
 
-
-
+@media screen and (max-width:768px) {
+ 
   .main_carousel .carousel-item > img {
     height: 200px;
   }
@@ -715,8 +788,9 @@ footer .footer_container span {
     align-items:center;
   }
 
-  .text-area {
+  .video-container .text-area {
     width: 80%;
+    padding: 0;
     margin-bottom: 50px;
   }
 
@@ -728,14 +802,13 @@ footer .footer_container span {
     width: 100%;
   
   }
+
+  .video-container iframe {
   
-  .swiper-container {
-    width: 100%;
-
-  }
-
-  .swiper-slide img {
-    height: 280px;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto ;
+   
   }
 
   .modalBox {

@@ -20,6 +20,7 @@ html, body{
   right: 0;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -201,10 +202,10 @@ html, body{
   grid-template-columns: 300px;
   /* 높이는 네가 알아서 해  */
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 0;
 }
 .content_container > .photo_area > img{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -230,8 +231,8 @@ footer .footer_container span {
   font-family: 'Jua';
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+  
   .navbar {
     
     flex-direction: column;
@@ -253,6 +254,13 @@ footer .footer_container span {
       width:100%;
       text-align: center;
   }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
   .navbar__sub_menu {
     opacity: 1;
     visibility: visible;
@@ -276,20 +284,31 @@ footer .footer_container span {
     min-height:100vh;
   }
 
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
+  }
+
+
+  .navbar__sub_menu_story.active {
+    display: block;
   }
 
   .navbar__sub_menu_contents.active {
     display: block;
   }
 
-  .navbar__sub_menu_afil.active {
+  .navbar__sub_menu_news.active {
     display: block;
   }
 
-  .navbar__sub_menu_inmuu.active {
+  .navbar__sub_menu_franchise.active {
     display: block;
   }
 
@@ -312,6 +331,13 @@ footer .footer_container span {
     width: 100%;
     grid-template-columns: 1fr;
   }  
+  
+
+}
+
+
+@media screen and (max-width:768px) {
+ 
   
   
 

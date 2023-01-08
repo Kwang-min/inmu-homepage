@@ -21,6 +21,7 @@ html, body{
   right: 0;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -211,7 +212,7 @@ html, body{
 .part2 {
   width: 90%;
   max-width: 1280px;
-  margin: 200px auto;  
+  margin: 80px auto 50px;  
   display: grid;
   /* 가로크기? */
   grid-template-columns: repeat(3, 1fr);
@@ -346,8 +347,8 @@ footer .footer_container span {
   font-family: 'Jua';
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+  
   .navbar {
     
     flex-direction: column;
@@ -369,6 +370,13 @@ footer .footer_container span {
       width:100%;
       text-align: center;
   }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
   .navbar__sub_menu {
     opacity: 1;
     visibility: visible;
@@ -392,20 +400,31 @@ footer .footer_container span {
     min-height:100vh;
   }
 
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
+  }
+
+
+  .navbar__sub_menu_story.active {
+    display: block;
   }
 
   .navbar__sub_menu_contents.active {
     display: block;
   }
 
-  .navbar__sub_menu_afil.active {
+  .navbar__sub_menu_news.active {
     display: block;
   }
 
-  .navbar__sub_menu_inmuu.active {
+  .navbar__sub_menu_franchise.active {
     display: block;
   }
 
@@ -425,39 +444,46 @@ footer .footer_container span {
     position:relative;
     width: 100%;
     color: #fff;
-    padding: 32px;
+    padding: 32px 32px 92px 32px;
   }
   
   .part1 > .text-area > .width-line  {
     left: 0px;
-    width: 200px;
+    width: 350px;
     
   }
   
   .part1 > .text-area > .vertical-line  {
     width: 3px;
-    height: 230px;
+    height: 300px;
    
   }
   
   
   .part1 > .text-area > h2 {
     padding: 24px;
-    font-size: 30px;
+    font-size: 50px;
   }
   .part1 > .photo-area  {
     width: 100%;
-
     margin-top: 40px;
   }
   
   .part1 > .photo-area > img  {
-    width: 300px;
+    width: 600px;
   }
   
   .part2 {
     grid-template-columns: 1fr;
 
+  }
+
+  .part2 > .banner > .text_container > .title {
+    font-size: 65px;
+  }
+
+  .part2 > .banner > .text_container > .text {
+    font-size: 35px;
   }
 
   .part3 {
@@ -466,11 +492,12 @@ footer .footer_container span {
   
   .part3 > .text-container {
     width: 100%;
+    margin-left: 130px;
   }
   
   .part3 > .text-container > .width-line  {
     left: -20px;
-    width: 300px;
+    width: 480px;
     
   }
   
@@ -484,15 +511,83 @@ footer .footer_container span {
   
   .part3 > .text-container > h2 {
     padding: 22px;
-    font-size: 21px;
+    font-size: 35px;
     font-weight: 600;
   }
   
   .part3 > .text-container > h1 {
     padding: 22px;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
   }
 
+}
+
+
+@media screen and (max-width:768px) {
+
+  .part1 > .text-area  {
+  
+    padding: 32px ;
+  }
+  
+  .part1 > .text-area > .width-line  {
+    left: 0px;
+    width: 200px;
+    
+  }
+  
+  .part1 > .text-area > .vertical-line  {
+    width: 3px;
+    height: 230px;
+   
+  }
+
+  .part1 > .text-area > h2 {
+    font-size: 30px;
+  }
+
+  .part1 > .photo-area > img  {
+    width: 300px;
+  }
+  
+  .part2 > .banner > .text_container > .title {
+    font-size: 45px;
+  }
+
+  .part2 > .banner > .text_container > .text {
+    font-size: 20px;
+  }
+
+
+
+  .part3 > .text-container {
+    margin-left: 20px;
+  }
+
+  .part3 > .text-container > .width-line  {
+    left: -20px;
+    width: 330px;
+    
+  }
+  
+  .part3 > .text-container > .vertical-line  {
+    top: 0px;
+    width: 3px;
+    height: 240px;
+   
+  }
+  
+  
+  .part3 > .text-container > h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .part3 > .text-container > h1 {
+    padding: 22px;
+    font-size: 25px;
+    font-weight: 600;
+  }
 }
 

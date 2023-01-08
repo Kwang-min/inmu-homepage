@@ -23,19 +23,66 @@ toggleBtn.addEventListener("click", () => {
 // 모바일에서 story 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
 storyMenuButton.addEventListener("click",() => {
     storySubmenu.classList.toggle('active');
+    //만약 액티브라면 비활성화로 바꾼다 x3
+    
+    if(contentsSubmenu.classList.contains('active')){
+        contentsSubmenu.classList.toggle('active');
+    };
+    if(newsSubmenu.classList.contains('active')){
+        newsSubmenu.classList.toggle('active');
+    }
+    if(franchiseSubmenu.classList.contains('active')){
+        franchiseSubmenu.classList.toggle('active');
+    }
 })
 
 // 모바일에서 인뮤컨텐츠 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
 contentsMenuButton.addEventListener("click",() => {
     contentsSubmenu.classList.toggle('active');
+
+     //만약 액티브라면 비활성화로 바꾼다 x3
+    
+    if(storySubmenu.classList.contains('active')){
+        storySubmenu.classList.toggle('active');
+    };
+    if(newsSubmenu.classList.contains('active')){
+        newsSubmenu.classList.toggle('active');
+    }
+    if(franchiseSubmenu.classList.contains('active')){
+        franchiseSubmenu.classList.toggle('active');
+    }
 })
 
 // 모바일에서 뉴스 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
 newsMenuButton.addEventListener("click",() => {
     newsSubmenu.classList.toggle('active');
+
+     //만약 액티브라면 비활성화로 바꾼다 x3
+    
+    if(contentsSubmenu.classList.contains('active')){
+        contentsSubmenu.classList.toggle('active');
+    };
+    if(storySubmenu.classList.contains('active')){
+        storySubmenu.classList.toggle('active');
+    }
+    if(franchiseSubmenu.classList.contains('active')){
+        franchiseSubmenu.classList.toggle('active');
+    }
 })
 
 // 모바일에서 창업 메뉴 버튼 눌리면 하위 메뉴 나타나는 토글
 franchiseMenuButton.addEventListener("click",() => {
     franchiseSubmenu.classList.toggle('active');
+
+     //만약 액티브라면 비활성화로 바꾼다 x3
+    
+    if(contentsSubmenu.classList.contains('active')){
+        contentsSubmenu.classList.toggle('active');
+    };
+    if(newsSubmenu.classList.contains('active')){
+        newsSubmenu.classList.toggle('active');
+    }
+    if(storySubmenu.classList.contains('active')){
+        storySubmenu.classList.toggle('active');
+    }
 })

@@ -20,6 +20,7 @@ html, body{
   right: 0;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
@@ -145,18 +146,28 @@ html, body{
 
 
 .button-area {
+  padding: 70px 90px 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 0.2fr;
+  grid-gap: 3rem;
+  
 }
+
+.button-area a {
+  text-decoration: none;
+}
+
 .button-area .target {
   background-color: #FF1493;
   /* color: white; */
+  
 }
+
 .button-area .button {
-  border: solid 2px #e4e5ed;
+  border: solid 3px black;
   border-radius: 20px;
   height: 50px;
+  
 }
 
 .button-area .button:hover {
@@ -167,7 +178,8 @@ html, body{
 .button-area .button .text {
   width: 60%;
   margin: 12px auto;
-  color: #666;
+  color: black;
+  
 }
 
 
