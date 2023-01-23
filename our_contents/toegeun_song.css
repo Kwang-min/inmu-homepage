@@ -160,6 +160,7 @@ html, body{
 .video-container > .text-area > .title > .in {
   font-size: 110px;
   font-weight: 600;
+  padding-bottom: 10px;
 }
 
 .video-container > .text-area > .title > .muuterview {
@@ -179,7 +180,7 @@ html, body{
 }
 
 
-iframe {
+.video-container > .video-area > iframe {
   
   width: 700px;
   height: 360px;
@@ -221,8 +222,8 @@ footer .footer_container span {
   font-family: 'Jua';
 }
 
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
+  
   .navbar {
     
     flex-direction: column;
@@ -244,6 +245,13 @@ footer .footer_container span {
       width:100%;
       text-align: center;
   }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
   .navbar__sub_menu {
     opacity: 1;
     visibility: visible;
@@ -267,20 +275,31 @@ footer .footer_container span {
     min-height:100vh;
   }
 
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
   .navbar__menu.active,
   .navbar__icons.active{
       display:flex;
+  }
+
+
+  .navbar__sub_menu_story.active {
+    display: block;
   }
 
   .navbar__sub_menu_contents.active {
     display: block;
   }
 
-  .navbar__sub_menu_afil.active {
+  .navbar__sub_menu_news.active {
     display: block;
   }
 
-  .navbar__sub_menu_inmuu.active {
+  .navbar__sub_menu_franchise.active {
     display: block;
   }
 
@@ -298,17 +317,102 @@ footer .footer_container span {
 
   .video-container {
     
-    flex-direction: column;
+    flex-direction: row;
   
   }
 
-  .video-container > .text-area {
-    margin-bottom: 60px;
+
+
+
+  .video-container > .text-area > .title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .video-container > .text-area > .title > .in {
+    font-size: 73px;
+    font-weight: 600;
+  }
+  
+  .video-container > .text-area > .title > .muuterview {
+    font-size: 23px;
+    font-weight: 600;
+  }
+  
+  .video-container > .text-area > .explanation {
+    font-size: 25px;
+    font-weight: 550;
+  }
+
+  .video-container > .video-area > iframe {
+    margin-top: 25px;
+    width: 440px;
+    height: 250px;
+   
   }
 
   .ps_container{
     margin-bottom: 70px;
   }
+
+
+}
+
+
+
+@media screen and (max-width:768px) {
+  
+
+  .intro h1 {
+    top: 100px;
+    left: 60%;
+  }
+
+  .content_container {
+  
+    width:90%;
+    margin: 0 auto;
+  }
+  
+  .video-container {
+    
+    flex-direction: column;
+  
+  }
+
+  .video-container > .text-area {
+    
+  }
+
+  .video-container > .text-area > .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-container > .text-area > .title > .in {
+    font-size: 110px;
+    font-weight: 600;
+  }
+  
+  .video-container > .text-area > .title > .muuterview {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .video-container > .text-area > .explanation {
+    font-size: 30px;
+    font-weight: 550;
+    text-align: center;
+  }
+
+  .video-container > .video-area > iframe {
+    margin-top: 25px;
+    width: 440px;
+    height: 250px;
+   
+  }
+  
   
 }
 
