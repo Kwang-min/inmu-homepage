@@ -180,7 +180,7 @@ html, body{
 }
 
 
-.video-container > .video-area > iframe {
+.video-container > .video-area > a > img {
   
   width: 700px;
   height: 360px;
@@ -344,7 +344,7 @@ footer .footer_container span {
     font-weight: 550;
   }
 
-  .video-container > .video-area > iframe {
+  .video-container > .video-area > a > img {
     margin-top: 25px;
     width: 440px;
     height: 250px;
@@ -406,10 +406,10 @@ footer .footer_container span {
     text-align: center;
   }
 
-  .video-container > .video-area > iframe {
+  .video-container > .video-area > a > img {
     margin-top: 25px;
-    width: 440px;
-    height: 250px;
+    width:100%;
+   
    
   }
   

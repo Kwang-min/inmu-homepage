@@ -147,13 +147,15 @@ html, body{
   display: grid;
   /* 가로크기? */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: minmax(300px, auto); */
-  /* 높이는 네가 알아서 해  */
-  grid-template-rows: auto;
+  
   grid-gap: 20px;
 }
 
-.banners > .banner {
+.banners a {
+  text-decoration: none;
+}
+
+.banners .banner {
   background: black;
   text-decoration: none;
   color: #444;
@@ -166,34 +168,38 @@ html, body{
   transition: 0.4s;
 }
 
-.banners > .banner:hover {
+.banners  .banner:hover {
   top: -2px;
 }
 
-.banners > .banner > img {
+.banners  .banner  img {
   width: 100%;
 
 }
 
-.banners > .banner > .text_container {
+.banners  .banner  .text_container {
   border:1px solid #fff;
-  /* 배너 높이를 균일하게 하기 위해 높이를 지정했음 */
-  height: 45%;
 }
 
-.banners > .banner > .text_container > .title {
+.banners  .banner  .text_container  .title {
   padding: 20px;
   color: white;
   font-weight: 600;
   font-size: 35px;
 }
 
-.banners > .banner > .text_container > .text {
+.banners  .banner  .text_container  .text {
   border-top: 1px solid grey;
-  padding: 20px 20px 70px;
+  padding: 20px 20px 90px;
   color: white;
   font-size: 25px;
   font-weight: 550;
+}
+
+/* 밴드데이 설명 텍스트 한 줄 더 있어서 높이 맞추기 위해 패딩 높이 줄이기 */
+
+.banners .band_day .text_container .text{
+  padding: 20px 20px 54px;
 }
 
 /* 프리클래스만 배경 색 흰색으로 */
@@ -201,6 +207,7 @@ html, body{
 .banners .free_class .text_container{
   background-color: #fff;
 }
+
 
 .banners .free_class .text_container .title, .banners .free_class .text_container .text{
   color: black;
@@ -214,7 +221,7 @@ html, body{
   display: flex;
   /* align-items:center;  */
 	justify-content:space-around;
-  background-image: url('img/KakaoTalk_20220801_170225518.png');
+  background-image: url('img/메인영상배경.png');
   background-size: cover;
 
 }
@@ -624,12 +631,22 @@ footer .footer_container span {
     display: block;
   }
 
-  .banners > .banner > .text_container {
+  .banners  .banner  .text_container {
     height: 50%;
   }
 
-  .banners > .banner > .text_container > .title {
+  .banners  .banner  .text_container  .title {
     font-size: 30px;
+  }
+
+  .banners  .banner  .text_container  .text {
+    padding: 20px 20px 70px;
+  }
+  
+  /* 밴드데이 설명 텍스트 한 줄 더 있어서 높이 맞추기 위해 패딩 높이 줄이기 */
+  
+  .banners .band_day .text_container .text{
+    padding: 20px 20px 34px;
   }
   
   
@@ -777,9 +794,6 @@ footer .footer_container span {
     width: 80%;
   }
   
-  .banners > .banner {
-    
-  }
 
   .video-container {
     width:100%;

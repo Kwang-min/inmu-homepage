@@ -354,6 +354,7 @@ footer .footer_container span {
   .content_container > .content {
     flex-direction: column;
     width: 90%;
+   
   }
 
   .content_container .text_container {

@@ -211,6 +211,10 @@ html, body{
   padding: 12px
  }
 
+ .content_container .news_box a {
+  text-decoration: none;
+ } 
+
 .content_container > .news_box_1 {
  
  }
@@ -329,7 +333,7 @@ footer .footer_container span {
 
   .content_container > .news_box {
     flex-direction: column;
-    height: 830px;
+    height: 1130px;
   }
 
   .content_container > .news_box_2 {
@@ -362,7 +366,7 @@ footer .footer_container span {
   }
 
   .content_container > .news_box {
-    height: 570px;
+    height: 730px;
   }
 
 }
