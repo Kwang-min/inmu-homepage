@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 4px 32px;
+  box-sizing: border-box;
+}
+
+
+.navbar__logo a{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-decoration-line : none;
+}
+
+.navbar__logo i {
+  color:#d49466;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style:none;
+  padding-left:0;
+  color: white;
+}
+
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu > li > a {
+  color: white;
+  font-size: 20px;
+  display: block;
+  padding: 12px 36px;
+  text-align: center;
+}
+
+
+.navbar__sub_menu {
+  padding: 12px 12px;
+  position: absolute;
+  visibility: hidden;
+  background: black;
+  z-index: 1;
+}
+
+.navbar__sub_menu_contents {
+  padding: 12px 30px;
+}
+
+.navbar__sub_menu_news {
+  padding: 12px 30px;
+}
+
+.navbar__sub_menu > li > a {
+  color: white;
+  text-decoration-line : none;
+}
+
+.navbar__menu > li:hover .navbar__sub_menu {
+  background-color: rgba( 255, 255, 255, 0.2 );
+  visibility: visible;
+}
+
+.navbar__icons {
+  font-size: 28px;
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left:0;
+}
+
+.navbar__icons li{
+  padding: 8px 12px;
+}
+
+.navbar__toggleBtn{
+  position: absolute;
+  right: 32px;
+  top: 3px;
+  font-size: 24px;
+  color: #d49466;
+  display: none;
+}
+
+.intro {
+  width: 100%;
+  height: 150px;
+  padding: 170px 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
+  url("img/KakaoTalk_20211106_135901402.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-color: #000;
+  opacity:0.7;  */
+}
+
+.intro h1 {
+  color: #fff;
+  
+}
+
+.intro .text {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro .text h1{
+  font-size: 45px;
+}
+
+.intro .text p {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.content_container {
+  width: 1280px;
+  min-height:1300px;
+  margin: 0 auto;
+}
+
+.box {
+  margin-top: 40px;
+  border-radius: 30px;
+  border:1px solid black;
+  display: flex;
+}
+
+.box .text_part{
+  width: 40%;
+  padding: 40px;
+  
+}
+
+
+
+.box .text_part .title .eng_title{
+  font-size: 30px;
+  
+}
+
+.box .text_part .title .kor_title{
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.box .text_part .instrument{
+  display: flex;
+  margin-top: 40px;
+}
+
+.box .text_part .instrument{
+  font-size: 20px;
+  
+}
+
+.box .text_part .explanation{
+  font-size: 20px;
+  margin-top: 40px;
+  
+}
+
+
+.box .img_part {
+  width: 60%;
+  padding: 40px;
+  margin: 0 auto;
+  
+}
+
+
+
+.box .img_part .button_part {
+  display : flex;
+  justify-content: space-between;
+}
+
+.box .img_part .button_part a {
+  text-decoration: none;
+  color: black;
+}
+
+.box .img_part .button {
+  width: 325px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border:1px solid black;
+}
+
+
+.box .img_part .button .text {
+  text-align: center;
+  padding: 11px 0;
+  font-size: 22px;
+  font-weight: 550;
+}
+
+
+
+.box .img_part .img_container img {
+  width : 690px;
+
+}
+
+
+
+footer {
+  background-color: #17171C;
+  width: 100%;
+}
+
+footer .footer_container {
+  padding-top: 50px; padding-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+footer .footer_container h3 {
+  color: #B0B8B7;
+}
+
+footer .footer_container span {
+  
+  color: #6A7182;
+  font-family: 'Jua';
+}
+
+@media screen and (max-width:1024px) {
+  
+  .navbar {
+    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+
+  }
+  .navbar__logo a{
+    font-size: 18px;
+  }
+  .navbar__menu{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+  }
+  .navbar__menu li{
+      width:100%;
+      text-align: center;
+  }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
+  .navbar__sub_menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar__sub_menu {
+    position: static;
+    display: none;
+  
+  }
+  .navbar__icons{
+      display: none;
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .navbar__toggleBtn{
+      display: block;
+  }
+
+  .navbar.active {
+    min-height:100vh;
+  }
+
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active{
+      display:flex;
+  }
+
+
+  .navbar__sub_menu_story.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_contents.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_news.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_franchise.active {
+    display: block;
+  }
+
+  .content_container {
+    width: 100%;
+  }
+  
+  .box {
+    flex-direction: column;
+  }
+
+  .box .text_part{
+    width: 80%;
+    margin: 0 auto;
+    
+    
+  }
+
+  .box .text_part .title {
+    text-align: center; 
+  }
+
+  .box .text_part .instrument{
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .box .text_part .left-vertical{
+    margin-right : 70px;
+    
+  }
+  
+  .box .text_part .right-vertical{
+    margin-left : 70px;
+    
+  }
+
+  .box .text_part .explanation{
+    width: 80%;
+    margin : 0 auto;
+    
+  }
+  
+  
+  .box .img_part {
+    width : 80%;
+  
+  }
+
+
+  .box .img_part .img_container img {
+    width : 570px;
+  
+  }
+
+  .box .img_part .button_part {
+    align-items : center;
+    flex-direction: column;
+  }
+  
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .content_container > .content {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  
+
+
+
+  
+}
+
