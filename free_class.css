@@ -84,7 +84,7 @@ html, body{
 }
 
 .navbar__menu > li:hover .navbar__sub_menu {
-  background-color: rgba( 255, 255, 255, 0.2 );
+  background-color: black;
   visibility: visible;
 }
 

@@ -36,9 +36,11 @@ html, body{
   text-decoration-line : none;
 }
 
+
 .navbar__logo i {
   color:#d49466;
 }
+
 
 .navbar__menu {
   display: flex;
@@ -266,11 +268,12 @@ footer .footer_container span {
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 24px;
-
   }
+
   .navbar__logo a{
     font-size: 18px;
   }
+
   .navbar__menu{
       display: none;
       flex-direction: column;
@@ -278,6 +281,7 @@ footer .footer_container span {
       width: 100%;
       
   }
+
   .navbar__menu li{
       width:100%;
       text-align: center;
@@ -293,11 +297,13 @@ footer .footer_container span {
     opacity: 1;
     visibility: visible;
   }
+
   .navbar__sub_menu {
     position: static;
     display: none;
   
   }
+
   .navbar__icons{
       display: none;
       width: 100%;
@@ -408,7 +414,35 @@ footer .footer_container span {
     width: 90%;
   }
 
+  .box .text_part{
+    width: 100%;  
+  }
+
+  .box .text_part .instrument{
+    font-size: 15px;
+  }
+
+  .box .text_part .explanation{
+    margin-top: 30px;
+    width: 85%;
+    
+  }
+
+  .box .img_part {
+    width: 100%;
+    
+  }
+
+  .box .img_part .img_container img {
+    width : 330px;
   
+  }
+
+  .box .img_part .button {
+    width: 255px;
+    height: 50px;
+  
+  }
 
 
 
