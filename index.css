@@ -85,7 +85,7 @@ html, body{
 }
 
 .navbar__menu > li:hover .navbar__sub_menu {
-  background-color: rgba( 255, 255, 255, 0.2 );
+  background-color: black;
   visibility: visible;
 }
 
@@ -222,7 +222,7 @@ html, body{
   display: flex;
   /* align-items:center;  */
 	justify-content:space-around;
-  background-image: url('img/메인영상배경.png');
+  background-image: url('img/index/메인영상배경.png');
   background-size: cover;
 
 }

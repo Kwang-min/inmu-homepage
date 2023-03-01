@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 4px 32px;
+  box-sizing: border-box;
+}
+
+
+.navbar__logo a{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-decoration-line : none;
+}
+
+.navbar__logo i {
+  color:#d49466;
+}
+
+.navbar__menu {
+  display: flex;
+  list-style:none;
+  padding-left:0;
+  color: white;
+}
+
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu > li > a {
+  color: white;
+  font-size: 20px;
+  display: block;
+  padding: 12px 36px;
+  text-align: center;
+  text-decoration-line : none;
+}
+
+
+.navbar__sub_menu {
+  padding: 12px 12px;
+  position: absolute;
+  visibility: hidden;
+  background: black;
+  z-index: 1;
+}
+
+.navbar__sub_menu_contents {
+  padding: 12px 30px;
+}
+
+.navbar__sub_menu_news {
+  padding: 12px 30px;
+}
+
+.navbar__sub_menu > li > a {
+  color: white;
+  text-decoration-line : none;
+}
+
+.navbar__menu > li:hover .navbar__sub_menu {
+  background-color: black;
+  visibility: visible;
+}
+
+.navbar__icons {
+  font-size: 28px;
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left:0;
+}
+
+.navbar__icons li{
+  padding: 8px 12px;
+}
+
+.navbar__toggleBtn{
+  position: absolute;
+  right: 32px;
+  top: 3px;
+  font-size: 24px;
+  color: #d49466;
+  display: none;
+}
+
+.intro {
+  width: 100%;
+  height: 150px;
+  padding: 170px 0;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
+  url("../img/KakaoTalk_20211106_135901402.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-color: #000;
+  opacity:0.7;  */
+}
+
+.intro h1 {
+  color: #fff;
+  
+}
+
+.intro .text {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro .text h1{
+  font-size: 45px;
+}
+
+.content_container {
+  width: 1280px;
+  margin: 0 auto;
+  min-height: 700px;
+}
+
+
+.button-area {
+  padding: 70px 90px 30px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+  
+}
+
+.button-area a {
+  text-decoration: none;
+}
+
+.button-area .target {
+  /* background-color: #0057FF; */
+  /* color: white; */
+  
+}
+
+.button-area .button {
+  border: solid 3px black;
+  border-radius: 20px;
+  height: 50px;
+  
+}
+
+.button-area .button:hover {
+  background-color: #0057FF;
+}
+.button-area .button:hover .text {
+  color: #fff;
+}
+
+.button-area .button .text {
+  width: 60%;
+  margin: 12px auto;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+
+.content_container > img {
+  width: 100%;
+}
+
+
+#Accordion_wrap {
+  padding: 50px 0 100px;
+}
+
+#Accordion_wrap .title {
+  text-align: center;
+  font-size:40px;
+  font-weight: 600;
+  margin: 30px auto 30px;
+}
+
+.line{
+  width: 50px;
+  height: 7px;
+  margin: 60px auto 60px;
+  background-color: blue;
+}
+
+.que:first-child{
+  border-top: 1px solid black;
+}
+
+.que{
+position: relative;
+padding: 23px 30px;
+cursor: pointer;
+font-size: 1.1rem;
+border-bottom: 1px solid #dddddd;
+text-align: left;
+}
+
+.que::before{
+display: inline-block;
+content: 'Q.';
+font-size: 1.4rem;
+color: blue;
+margin-right: 5px;
+}
+
+.que.on>span{
+font-weight: bold;
+color: blue; 
+}
+
+.anw {
+display: none;
+overflow: hidden;
+font-size: 1.1rem;
+background-color: #f4f4f2;
+padding: 28px 30px;
+text-align: left;
+}
+
+.anw::before {
+display: inline-block;
+content: 'A.';
+font-size: 1.3rem;
+font-weight: bold;
+color: #666;
+margin-right: 5px;
+}
+
+.goupbtn {
+  top: 80%;
+  left: 94.9%;
+  width: 60px;
+  height: 60px;
+  border-radius: 80%;
+  background-color: #ffffff;
+  border: black 3px solid;
+  position: fixed;
+  z-index: 2;
+}
+
+
+footer {
+  background-color: #17171C;
+  width: 100%;
+}
+
+footer .footer_container {
+  padding-top: 50px; padding-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+footer .footer_container h3 {
+  color: #B0B8B7;
+}
+
+footer .footer_container span {
+  
+  color: #6A7182;
+  font-family: 'Jua';
+}
+
+@media screen and (max-width:1024px) {
+  
+  .navbar {
+    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+
+  }
+  .navbar__logo a{
+    font-size: 18px;
+  }
+  .navbar__menu{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+  }
+  .navbar__menu li{
+      width:100%;
+      text-align: center;
+  }
+
+  .navbar__menu > li > a {
+    /* 햄버거 메뉴에서는 상위 메뉴 글씨 크고 굵게 */
+    font-size: 25px;
+    font-weight : 550;
+  }
+
+  .navbar__sub_menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar__sub_menu {
+    position: static;
+    display: none;
+  
+  }
+  .navbar__icons{
+      display: none;
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .navbar__toggleBtn{
+      display: block;
+  }
+
+  .navbar.active {
+    min-height:100vh;
+  }
+
+  .navbar__menu > li:hover .navbar__sub_menu {
+    /* 햄버거 메뉴에서는 상위 메뉴 클릭시 하위 메뉴 색 검정색으로 나오도록 */
+    background-color: black;
+    
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active{
+      display:flex;
+  }
+
+
+  .navbar__sub_menu_story.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_contents.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_news.active {
+    display: block;
+  }
+
+  .navbar__sub_menu_franchise.active {
+    display: block;
+  }
+
+  .content_container {
+    width: 100%;
+    
+  }
+
+  .button-area {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .button-area .button {
+    height: 40px;
+  }
+
+  .button-area .button .text {
+    margin: 8px auto;
+    width: 80%;
+  }
+
+  .content_container > img {
+    width: 100%;
+    
+  }
+
+  .goupbtn {
+    top: 87%;
+    left: 90%;
+  }
+
+
+  
+
+}
+
+
+@media screen and (max-width:768px) {
+  
+
+  .content_container {
+    width: 100%;
+    
+  }
+
+  .button-area {
+    width: 90%;
+    /* margin: 0 auto; */
+    
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .button-area .button {
+    width : 150px;
+    height: 40px;
+  }
+
+  .button-area .button .text {
+    margin: 8px auto;
+    width: 80%;
+  }
+
+  .content_container > img {
+    width: 100%;
+    
+  }
+
+  .goupbtn {
+    top: 80%;
+    left: 80%;
+  }
+  
+}
+

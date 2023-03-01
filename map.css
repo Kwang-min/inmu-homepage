@@ -86,7 +86,7 @@ html, body{
 }
 
 .navbar__menu > li:hover .navbar__sub_menu {
-  background-color: rgba( 255, 255, 255, 0.2 );
+  background-color: black;
   visibility: visible;
 }
 
@@ -116,7 +116,7 @@ html, body{
   height: 150px;
   padding: 170px 0;
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),
-  url("img/KakaoTalk_20211106_135901402.jpg");
+  url("img/map/임시상단이미지.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -150,7 +150,7 @@ html, body{
 .content_container {
   width: 1280px;
   min-height:1300px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .box {
@@ -382,7 +382,8 @@ footer .footer_container span {
 
   .box .text_part .explanation{
     width: 80%;
-    margin : 0 auto;
+    margin : 30px auto 0;
+    font-size: 30px;
     
   }
   
@@ -425,6 +426,7 @@ footer .footer_container span {
   .box .text_part .explanation{
     margin-top: 30px;
     width: 85%;
+    
     
   }
 
