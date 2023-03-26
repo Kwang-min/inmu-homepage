@@ -180,10 +180,11 @@ html, body{
 .box .text_part .instrument{
   display: flex;
   margin-top: 40px;
+  font-size: 20px;
 }
 
-.box .text_part .instrument{
-  font-size: 20px;
+.box .text_part .instrument .right-vertical{
+  padding-left: 130px;
   
 }
 
@@ -380,23 +381,17 @@ footer .footer_container .footer_info .footer_info_right div{
   }
 
   .box .text_part .instrument{
-    justify-content: center;
     font-size: 30px;
   }
 
-  .box .text_part .left-vertical{
-    margin-right : 70px;
-    
-  }
-  
-  .box .text_part .right-vertical{
-    margin-left : 70px;
-    
+  .box .text_part .instrument .right-vertical {
+    padding-left : 265px;
+
   }
 
   .box .text_part .explanation{
-    width: 80%;
-    margin : 30px auto 0;
+    /* width: 80%;
+    margin : 30px auto 0; */
     font-size: 25px;
     
   }
@@ -409,7 +404,7 @@ footer .footer_container .footer_info .footer_info_right div{
 
 
   .box .img_part .img_container img {
-    width : 570px;
+    width : 580px;
   
   }
 
@@ -417,7 +412,17 @@ footer .footer_container .footer_info .footer_info_right div{
     align-items : center;
     flex-direction: column;
   }
+
+  .box .img_part .button {
+    width: 570px;
+    height: 70px;
+    
   
+  }
+  
+  .box .img_part .button .text {
+    font-size: 30px;
+  }
 }
 
 
@@ -430,7 +435,7 @@ footer .footer_container .footer_info .footer_info_right div{
   }
 
   .box .text_part{
-    width: 100%;  
+    width: 90%;  
   }
 
   .box .text_part .instrument{
@@ -439,28 +444,36 @@ footer .footer_container .footer_info .footer_info_right div{
 
   .box .text_part .explanation{
     margin-top: 30px;
-    width: 85%;
     font-size: 15px;
     
   }
 
+  .box .text_part .instrument .right-vertical {
+    padding-left : 145px;
+
+  }
+
   .box .img_part {
-    width: 100%;
+    width: 90%;
     
   }
 
   .box .img_part .img_container img {
-    width : 250px;
-    margin: 0 40px;
+    width : 290px;
+  
   
   }
 
   .box .img_part .button {
-    width: 255px;
+    width: 290px;
     height: 50px;
   
   }
 
+
+  .box .img_part .button .text {
+    font-size: 20px;
+  }
 
 
   
