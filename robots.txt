@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: http://inmuunity.com/sitemap.xml
