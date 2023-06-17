@@ -91,9 +91,7 @@ html, body{
 }
 
 .navbar__icons {
-  font-size: 28px;
-  list-style: none;
-  color: white;
+  
   display: flex;
   padding-left:0;
 }
@@ -101,6 +99,14 @@ html, body{
 .navbar__icons li{
   padding: 8px 12px;
 }
+
+.navbar__icons li a{
+  text-decoration: none;
+  font-size: 28px;
+  list-style: none;
+  color: white;
+}
+
 
 .navbar__toggleBtn{
   position: absolute;
