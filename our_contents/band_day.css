@@ -186,7 +186,7 @@ html, body{
 }
 
 
-.video-container > .video-area > a > img {
+.video-container > .video-area > iframe {
   
   width: 700px;
   height: 360px;
